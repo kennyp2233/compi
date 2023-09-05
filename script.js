@@ -26,27 +26,12 @@ function toogleText1() {
     }
 }
 
-
-let hideText_btn2 = document.getElementById('hideText_btn2');
-let hideText2 = document.getElementById('hideText2');
-hideText_btn2.addEventListener('click', toogleText2);
-
-function toogleText2() {
-    hideText2.classList.toggle('show2');
-    if (hideText2.classList.contains('show2')) {
-        hideText_btn2.innerHTML = 'Leer menos';
-    } else {
-        hideText_btn2.innerHTML = 'Leer más';
-    }
-}
-
-
-
 let hideText_btn3 = document.getElementById('hideText_btn3');
 let hideText3 = document.getElementById('hideText3');
 hideText_btn3.addEventListener('click', toogleText3);
 
 function toogleText3() {
+    console.log("asdasda")
     hideText3.classList.toggle('show3');
     if (hideText3.classList.contains('show3')) {
         hideText_btn3.innerHTML = 'Leer menos';
