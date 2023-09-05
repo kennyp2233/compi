@@ -1,2020 +1,298 @@
-* {
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    border: 0;
-    font-size: 100%;
-    vertical-align: baseline;
+    background-color: #f5f5f5;
 }
 
-body {
-    text-align: center;
-    font-family: sans-serif;
-}
-
-.head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 64px;
-    background: #171717;
-    position: fixed;
-    width: 100%;
-    z-index: 100%
-}
-
-.information {
-    display: flex;
-    margin-right: 0px;
-}
-
-.nameU {
-    margin-left: 35px;
-}
-
-.nameU a {
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    font-size: 20px;
-}
-
-/* Aqui llama a la instancia y al enlace es decir le da un formato*/
-.information a {
-    display: block;
-    padding: 20px 40px;
+/* Encabezado */
+.header {
+    background-color: #333;
     color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-title {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+}
+
+/* Sección de contenido */
+.section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+    max-width: 800px; /* Ancho máximo del contenido */
+    text-align: justify; /* Alineación justificada del texto */
+}
+
+.section-title {
+    font-size: 20px;
+    margin: 0 0 20px;
+    text-align: center; /* Alineación centrada del título */
+}
+
+.content-subtitle {
+    font-size: 18px;
+    margin: 0;
+}
+
+.content-text {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.content-bold {
+    font-weight: bold;
+    color: rgb(37, 62, 0);
+}
+
+.content-list {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.content-toggle {
+    margin-top: 20px;
+    text-align: center; /* Alineación centrada del botón */
+}
+
+.read-more-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.hidden-content {
+    display: none;
+}
+
+/* Estilos para las diferencias entre compiladores e intérpretes */
+.content-differences {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-difference {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin: 10px;
+}
+
+
+/* Estilos para la cabecera */
+/* Estilos para la cabecera principal */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.main-header a {
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: 15px;
+    color: #fff;
 }
 
-.logoEPN {
-    display: flex;
-    margin-right: 490px;
-    margin-top: 6px;
-}
-
-.information a:hover {
-    background: #808000;
-}
-
+/* Estilos para la sección del título */
 .header {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
-
-.header {
-    margin-top: -1150px;
-    height: 400vh !important;
-    background: url(Imagenes/F4.jpg) no-repeat center;
-    background-size: cover;
-}
-
-.title {
-    margin-top: 40px;
-    font-size: 65px;
-    font-weight: 620px;
-    text-transform: uppercase;
-}
-
-
-.textoCE {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-    text-align: justify;
-    text-shadow: 2px -2px 0.1px black;
-}
-
-.titulodef{
-    font-size: 35px;
-    margin-top: 30px;
-    margin-left: -950px;
-    color: pink;
-    text-shadow: 1px 0px 0px black,
-        0px 1px 0px black,
-        -1px -1px 0px black,
-        0px -1px 0px black;
-}
-
-
-.titulodef2{
-    font-size: 35px;
-    margin-top: 30px;
-    margin-left: -670px;
-    color: pink;
-    text-shadow: 1px 0px 0px black,
-        0px 1px 0px black,
-        -1px -1px 0px black,
-        0px -1px 0px black;
-}
-
-.titulodef3{
-    font-size: 35px;
-    margin-top: 30px;
-    margin-left: -5px;
-    color: pink;
-    text-shadow: 1px 0px 0px black,
-        0px 1px 0px black,
-        -1px -1px 0px black,
-        0px -1px 0px black;
-}
-
-.titulodef4{
-    font-size: 35px;
-    margin-top: 30px;
-    margin-left: -539px;
-    color: pink;
-    text-shadow: 1px 0px 0px black,
-        0px 1px 0px black,
-        -1px -1px 0px black,
-        0px -1px 0px black;
-}
-
-
-
-.titulodeff3{
-    font-size: 20px;
-    margin-top: 30px;
-    margin-left: -5px;
-    color: yellow;
-    text-shadow: 1px 0px 0px black,
-        0px 1px 0px black,
-        -1px -1px 0px black,
-        0px -1px 0px black;
-}
-
-.titulodefinicion {
-    font-size: 45px;
-    margin-left: -500px;
-    text-align: left;
-    color: red;
-    justify-content: center;
-    text-shadow: 1px 0px 0px black,
-        0px 1px 0px black,
-        -1px -1px 0px black,
-        0px -1px 0px black;
-}
-
-.Definicion {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-    height: 10rem;
-    width: 71rem;
-    text-align: center;
-}
-
-
-.hide {
-    display: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-    text-align: justify;
-}
-
-.hide1 {
-    display: none;
-    color: black;
-    text-align: justify;
-}
-
-.hide2 {
-    display: none;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
-    text-align: justify;
-}
-
-.hide3 {
-    display: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
-    text-align: justify;
-}
-
-.hide4 {
-    display: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: black;
-    text-align: justify;
-}
-
-.hide5 {
-    display: none;
-    color: black;
-    text-align: justify;
-}
-
-.hide6 {
-    display: none;
-    color: black;
-    text-align: justify;
-}
-
-.hide7 {
-    display: none;
-    color: black;
-    text-align: justify;
-}
-
-.show {
-    display: block;
-}
-
-.show1 {
-    display: block;
-}
-
-.show2 {
-    display: block;
-}
-
-.show3 {
-    display: block;
-}
-
-.show4 {
-    display: block;
-}
-
-.show5 {
-    display: block;
-}
-
-.show6 {
-    display: block;
-}
-
-.show7 {
-    display: block;
-}
-
-
-p {
-    margin-bottom: 40px;
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
     font-size: 18px;
 }
 
-.readMore_btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 40px;
-    justify-content: center;
-    border: 2px solid orangered;
-    color: white;
-    border-radius: 3rem;
-    text-decoration: none;
-    background: orangered;
-}
-
-.btn:hover {
-    background: none;
-}
-
-.btn-home {
-    display: flex;
-}
-
-.btn-home a {
-    margin: 0 10px;
-}
-
-.content {
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.cableadoEstructuradoTitulo {
-    font-size: 60px;
-    text-align: center;
-    margin-top: -270px;
-    color: red;
-    text-shadow: 1px 0px 0px black,
-        0px 1px 0px black,
-        -1px -10px 7px black,
-        200px -1px 199px black;
-}
-
-/* Contenedor Caracteristicas y Topologias*/
-.CaracteristicasYTopologias {
-    background: black;
-}
-
-.contenedorCYT {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-.contenedorCYT .CYT {
-    font-size: auto;
-    height: auto;
-    width: auto;
-    background: whitesmoke;
-    text-align: center;
-    border-radius: 2rem;
-    box-shadow: 0 .3rem 3rem rgba(0, 0, 0, .4);
-    margin: 45px;
-    color: black;
-    justify-content: space-between;
-}
-
-.tituloCarYTopologias {
-    font-size: 45px;
-    text-align: center;
-    color: palevioletred;
-    justify-content: center;
-    text-shadow: 1px 0px 0px black,
-        0px 1px 0px black,
-        -1px -1px 0px black,
-        0px -1px 0px black;
-}
-
-.TITULOCaracteristicas{
-    margin-top: 20px;
-    font-size: 28px;
-    text-align: left;
-    margin-left: 140px;
-    color: darkslateblue;
-    text-shadow: 0px 0px 0px black,
-        0px 1px 0.1px black,
-        -0.2px 0.2px 0px black,
-        0px -0.1px 0px black;
-}
-
-.tituloMod{
-    font-size: 22px;
-    margin-top: 20px;
-    text-align: left;
-    margin-left: 200px;
-    color: midnightblue;
-}
-
-.defMod{
-    margin-top: 15px;
-    margin-left: 250px;
-    margin-right: 220px;
-    text-align: justify;
-}
-
-.tituloFlexibilidad{
-    font-size: 22px;
-    margin-top: 20px;
-    text-align: left;
-    margin-left: 200px;
-    color: midnightblue;
-}
-
-.defFlexibilidad{
-    margin-top: 15px;
-    margin-left: 250px;
-    margin-right: 220px;
-    text-align: justify;
-}
-
-.tituloTI{
-    font-size: 22px;
-    margin-top: 20px;
-    text-align: left;
-    margin-left: 200px;
-    color: midnightblue;
-}
-
-.defTI{
-    margin-top: 15px;
-    margin-left: 250px;
-    margin-right: 220px;
-    text-align: justify;
-}
-
-.tituloBCI{
-    font-size: 22px;
-    font-style: normal;
-    margin-top: 20px;
-    text-align: left;
-    margin-left: 200px;
-    color: midnightblue;
-}
-
-.defBCI{
-    margin-top: 15px;
-    margin-left: 250px;
-    margin-right: 220px;
-    text-align: justify;
-}
-
-.tituloFDIYM{
-    font-size: 22px;
-    margin-top: 20px;
-    text-align: left;
-    margin-left: 200px;
-    color: midnightblue;
-}
-
-.defFDIYM{
-    margin-top: 15px;
-    margin-left: 250px;
-    margin-right: 220px;
-    text-align: justify;
-}
-
-.tituloConf{
-    font-size: 22px;
-    margin-top: 20px;
-    text-align: left;
-    margin-left: 200px;
-    color: midnightblue;
-}
-
-.defConf{
-    margin-top: 15px;
-    margin-left: 250px;
-    margin-right: 220px;
-    text-align: justify;
-}
-
-.tituloAdmin{
-    font-size: 22px;
-    margin-top: 20px;
-    text-align: left;
-    margin-left: 200px;
-    color: midnightblue;
-}
-
-.defAdmin{
-    margin-top: 15px;
-    margin-left: 250px;
-    margin-right: 220px;
-    text-align: justify;
-}
-
-.tituloTopologia{
-    margin-top: 20px;
-    font-size: 28px;
-    text-align: left;
-    margin-left: 140px;
-    color: darkslateblue;
-    text-shadow: 0px 0px 0px black,
-        0px 1px 0.1px black,
-        -0.2px 0.2px 0px black,
-        0px -0.1px 0px black;
-}
-
-.definicionTopologia{
-    margin-top: 15px;
-    margin-left: 220px;
-    margin-right: 220px;
-    text-align: justify;
-}
-
-.tituloTopologiaDeRed{
-    font-size: 22px;
-    margin-top: 20px;
-    text-align: left;
-    margin-left: 200px;
-    color: darkred;
-}
-
-.DeftopologiaDeRed{
-    line-height: 24px;
-    margin-top: 15px;
-    margin-left: 260px;
-    margin-right: 260px;
-    text-align: justify;
-}
-
-.topologiaB{
-    font-size: 22px;
-    margin-top: 20px;
-    text-align: left;
-    margin-left: 250px;
-    color: darkorchid;
-}
-
-.defTB{
-    margin-top: 15px;
-    margin-left: 330px;
-    margin-right: 330px;
-    text-align: justify;
-}
-
-.ImgTB{
-    text-align: center;
-}
-
-.tituloEnAnillo{
-    font-size: 22px;
-    margin-top: 20px;
-    text-align: left;
-    margin-left: 250px;
-    color: darkorchid;
-}
-
-.defEnAnillo{
-    line-height: 24px;
-    margin-top: 15px;
-    margin-left: 320px;
-    margin-right: 290px;
-    text-align: justify;   
-}
-
-.ImgTEnAnillo{
-    text-align: center;
-}
-
-.tituloTEE{
-    font-size: 22px;
-    margin-top: 20px;
-    text-align: left;
-    margin-left: 250px;
-    color: darkorchid;
-}
-
-.defTEE{
-    margin-top: 15px;
-    margin-left: 320px;
-    margin-right: 290px;
-    text-align: justify; 
-}
-
-.ImgTEE{
-    text-align: center;
-}
-
-.readMore_btn1{
-    border: 1px solid black;
-    /*anchura, estilo y color borde*/
-    padding: 9px;
-    /*espacio alrededor texto*/
-    background-color: black;
-    /*color botón*/
-    color: #ffffff;
-    /*color texto*/
-    text-decoration: none;
-    /*decoración texto*/
-    text-transform: uppercase;
-    /*capitalización texto*/
-    font-family: 'Helvetica', sans-serif;
-    /*tipografía texto*/
-    border-radius: 50px;
-    /*bordes redondos*/
-}
-
-/*Para hacer columnas con las imagenes*/
-
-
-.DispositivosDeInterconexión {
-    background: aquamarine;
-}
-
-.contedorDI {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-.contenedorDI .DI {
-    font-size: auto;
-    height: auto;
-    width: auto;
-    background: whitesmoke;
-    text-align: center;
-    border-radius: 2rem;
-    box-shadow: 0 .3rem 3rem rgba(0, 0, 0, .4);
-    margin: 45px;
-    color: black;
-    justify-content: space-between;
-}
-
-
-.tituloDI {
-    font-size: 45px;
-    text-align: center;
-    color: crimson;
-    justify-content: center;
-    text-shadow: 1px 0px 0px black,
-        0px 1px 0px black,
-        -1px -1px 0px black,
-        0px -1px 0px black;
-}
-
-.preguntaDI {
-    line-height: 60px;
-    font-size: 20px;
-    text-align: left;
-    margin-left: 110px;
-    color: darkmagenta;
-}
-
-.textoDefDI {
-    margin-left: 150px;
-    margin-right: 150px;
-    text-align: justify;
-    color: darkslategray;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.textoDefDI1 {
-    margin-left: 150px;
-    margin-right: 150px;
-    text-align: justify;
-    color: darkslategray;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-
-.textvi {
-    margin-left: 280px;
-    margin-right: 150px;
-    text-align: justify;
-    color: darkred;
-    line-height: 24px;
-}
-
-/* Para el contenedor de Elementos*/
-.Elementos {
-    background: darkolivegreen;
-}
-
-.ContedorElementos {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-.ContenedorElementos .CE {
-    font-size: auto;
-    height: auto;
-    width: auto;
-    background: #efefef;
-    text-align: center;
-    border-radius: 2rem;
-    box-shadow: 0 .3rem 3rem rgba(0, 0, 0, 500);
-    margin: 45px;
-    color: black;
-    justify-content: space-between;
-}
-
-
-
-.tituloElementos {
-    font-size: 45px;
-    text-align: center;
-    color: darkcyan;
-    justify-content: center;
-    text-shadow: 1px 0px 0px black,
-        0px 1px 0px black,
-        -1px -1px 0px black,
-        0px -1px 0px black;
-}
-
-.tituloECH {
-    font-size: 25px;
-    margin-top: 25px;
-    margin-left: 35px;
-    text-align: left;
-    color: darkblue;
-    text-shadow: 0px 0px 0px black,
-        0px 0px 0px black,
-        0px 0px 0px black,
-        0px 0px 0px black;
-}
-
-
-.tituloECH1 {
-    font-size: 20px;
-    margin-top: 25px;
-    margin-left: 75px;
-    text-align: left;
-    color: brown;
-    text-shadow: 0px 0px 0px black,
-        0px 0px 0px black,
-        0px 0px 0px black,
-        0px 0px 0px black;
-}
-
-
-.DefECH {
-    margin-top: 10px;
-    margin-left: 90px;
-    margin-right: 120px;
-    text-align: justify;
-}
-
-
-.TituloCablesH {
-    margin-top: 15px;
-    font-size: 17px;
-    margin-left: 190px;
-
-}
-
-.textocablesH {
-    margin-top: 15px;
-    margin-left: 220px;
-}
-
-.ImgComponentesECH {
-    text-align: center;
-}
-
-.TituloRP {
-    margin-top: 15px;
-    font-size: 17px;
-    margin-left: 190px;
-}
-
-.textoRP {
-    margin-top: 15px;
-    margin-left: 220px;
-}
-
-.ImgRegletas {
-    text-align: center;
-}
-
-.TituloCPuentes {
-    margin-top: 15px;
-    font-size: 17px;
-    margin-left: 190px;
-}
-
-.textoCPuentes {
-    margin-top: 15px;
-    margin-right: 120px;
-    margin-left: 220px;
-}
-
-.TituloPAcceso {
-    margin-top: 15px;
-    font-size: 17px;
-    margin-left: 190px;
-}
-
-.textoPAcceso {
-    margin-top: 15px;
-    margin-left: 220px;
-}
-
-.ImgPAcceso {
-    text-align: center;
-}
-
-.TituloPCT {
-    margin-top: 15px;
-    font-size: 17px;
-    margin-left: 190px;
-}
-
-.textoPCT {
-    margin-top: 15px;
-    margin-right: 160px;
-    margin-left: 220px;
-}
-
-.tituloECV {
-    font-size: 21px;
-    margin-top: 30px;
-    margin-left: 150px;
-    text-align: left;
-    color: blue;
-    text-shadow: 0px 0px 0px black,
-        0px 0px 0px black,
-        0px 0px 0px black,
-        0px 0px 0px black;
-}
-
-.defCVertical {
-    margin-top: 13px;
-    margin-left: 90px;
-    margin-right: 120px;
-    text-align: justify;
-}
-
-.CableadoVertical {
-    text-align: center;
-}
-
-.tituloCDC {
-    font-size: 21px;
-    margin-top: 30px;
-    margin-left: 150px;
-    text-align: left;
-    color: blue;
-    text-shadow: 0px 0px 0px black,
-        0px 0px 0px black,
-        0px 0px 0px black,
-        0px 0px 0px black;
-}
-
-.DefCC {
-    margin-top: 13px;
-    margin-left: 90px;
-    margin-right: 120px;
-    text-align: justify;
-}
-
-.vimCC {
-    margin-left: 180px;
-}
-
-
-.columna1Izq {
-    margin-left: 100px;
-    width: 800px;
-    margin-top: 20px;
-    text-align: justify;
-}
-
-.tituloCEDLRD {
-    font-size: 15px;
-    margin-top: 30px;
-    margin-left: 100px;
-}
-
-.textoCEDLRD {
-    margin-top: 12px;
-    margin-left: 140px;
-}
-
-.vimCEDLRD {
-    margin-top: -30px;
-    margin-left: 100px;
-}
-
-.ImgCuartoDeComunicaciones {
-    text-align: center;
-}
-
-.readMore_btn2 {
-    border: 1px solid black;
-    /*anchura, estilo y color borde*/
-    padding: 9px;
-    /*espacio alrededor texto*/
-    background-color: black;
-    /*color botón*/
-    color: #ffffff;
-    /*color texto*/
-    text-decoration: none;
-    /*decoración texto*/
-    text-transform: uppercase;
-    /*capitalización texto*/
-    font-family: 'Helvetica', sans-serif;
-    /*tipografía texto*/
-    border-radius: 50px;
-    /*bordes redondos*/
-    margin-left: 47%;
-}
-
-
-
-.columna2Der {
-    margin-left: 960px;
-    margin-right: 10px;
-    margin-top: -290px;
-}
-
-.vi {
-    margin-left: 60px;
-    line-height: 0px;
-}
-
-.tituloRepetidores {
-    margin-left: 500px;
-}
-
-
-.columna2Izq {
-    margin-left: 60px;
-    margin-right: 10px;
-    margin-top: -170px;
-}
-
-.readMore_btn7{
-    border: 1px solid black;
-    /*anchura, estilo y color borde*/
-    padding: 9px;
-    /*espacio alrededor texto*/
-    background-color: violet;
-    /*color botón*/
-    color: black;
-    /*color texto*/
-    text-decoration: none;
-    /*decoración texto*/
-    text-transform: uppercase;
-    /*capitalización texto*/
-    font-family: 'Helvetica', sans-serif;
-    /*tipografía texto*/
-    border-radius: 50px;
-    /*bordes redondos*/
-}
-
-.columna1Der {
-    margin-left: 400px;
-    width: 800px;
-    margin-top: 30px;
-    text-align: justify;
-}
-
-.tituloHubs {
-    margin-left: 180px;
-}
-
-.columna1IzqB {
-    margin-left: 100px;
-    width: 800px;
-    margin-top: 20px;
-    text-align: justify;
-}
-
-.columna2DerB {
-    margin-left: 960px;
-    margin-right: 10px;
-    margin-top: -200px;
-}
-
-
-.tituloBridge {
-    margin-left: 500px;
-}
-
-.columna1DerSw {
-    margin-left: 410px;
-    width: 800px;
-    margin-top: 60px;
-    text-align: justify;
-}
-
-.columna2IzqSw {
-    margin-left: 80px;
-    margin-right: 10px;
-    margin-top: -180px;
-}
-
-.tituloSwitch {
-    margin-left: 80px;
-}
-
-
-.columna1IzqR {
-    margin-left: 100px;
-    width: 800px;
-    margin-top: 20px;
-    text-align: justify;
-}
-
-.columna2DerR {
-    margin-left: 930px;
-    margin-right: 2px;
-    margin-top: -200px;
-}
-
-.tituloRouter {
-    margin-left: 500px;
-}
-
-.columna1DerG {
-    margin-left: 410px;
-    width: 800px;
-    margin-top: 70px;
-    text-align: justify;
-}
-
-.columna2IzqG {
-    margin-left: 80px;
-    margin-right: 10px;
-    margin-top: -180px;
-}
-
-.tituloGateway {
-    margin-left: 190px;
-}
-
-
-.readMore_btn5 {
-    border: 1px solid #2e518b;
-    /*anchura, estilo y color borde*/
-    padding: 9px;
-    /*espacio alrededor texto*/
-    background-color: #2e518b;
-    /*color botón*/
-    color: #ffffff;
-    /*color texto*/
-    text-decoration: none;
-    /*decoración texto*/
-    text-transform: uppercase;
-    /*capitalización texto*/
-    font-family: 'Helvetica', sans-serif;
-    /*tipografía texto*/
-    border-radius: 50px;
-    /*bordes redondos*/
-}
-
-/*Contenedor Canalizaciones*/
-
-.Canalizaciones {
-    background: #800000;
-}
-
-.contedorCa {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-.contenedorCa .Ca {
-    font-size: auto;
-    height: auto;
-    width: auto;
-    background: #E8D5D5;
-    text-align: center;
-    border-radius: 2rem;
-    box-shadow: 0 .3rem 3rem rgba(0, 0, 0, .4);
-    margin: 45px;
-    color: black;
-    justify-content: space-between;
-}
-
-.tituloCanalizaciones {
-    font-size: 45px;
-    text-align: center;
-    color: darkgoldenrod;
-    justify-content: center;
-    text-shadow: 1px 0px 0px black,
-        0px 1px 0px black,
-        -1px -1px 0px black,
-        0px -1px 0px black;
-}
-
-.DefinicionCa {
-    margin-top: 20px;
-    margin-left: 170px;
-    margin-right: 170px;
-    text-align: justify;
-}
-
-.tituloCB {
-    font-size: 20px;
-    margin-left: 110px;
-    color: darkgoldenrod;
-    text-shadow: 0px 0px 0px black,
-        0px 1px 0.1px black,
-        -0.2px 0.2px 0px black,
-        0px -0.1px 0px black;
-}
-
-.txtAdicional {
-    color: #0a141d;
-    font-family: 'Courier New', Courier, monospace;
-    margin-top: 8px;
-    margin-left: 110px;
-}
-
-.tituloCanalizacionesExt {
-    margin-top: 19px;
-    font-size: 20px;
-    text-align: left;
-    margin-left: 180px;
-    color: #2e518b;
-}
-
-.DefinicionCExternas p {
-    margin-top: 12px;
-    margin-left: 252px;
-    margin-right: 220px;
-    color: black;
-    font-size: 16.5px;
-    text-align: justify;
-}
-
-.tituloCaSubterraneas {
-    margin-left: 230px;
-    color: brown;
-}
-
-.DefinicionCaSub {
-    margin-top: 15px;
-    margin-left: 290px;
-    margin-right: 190px;
-}
-
-.ImgCaSubterranea {
-    margin-top: -10px;
-    text-align: center;
-}
-
-.tituloCaDEnterradas {
-    margin-top: 18px;
-    margin-left: 230px;
-    color: brown;
-}
-
-.DefinicionCaDEnterradas {
-    margin-top: 15px;
-    margin-left: 290px;
-    margin-right: 190px;
-}
-
-.ImgCaDEnterradas {
-    margin-top: -21px;
-    text-align: center;
-}
-
-.tituloCAAereo {
-    margin-top: 18px;
-    margin-left: 230px;
-    color: brown;
-}
-
-.DefinicionCaAereos {
-    margin-top: 15px;
-    margin-left: 290px;
-    margin-right: 190px;
-}
-
-.ImgCaAereo {
-    margin-top: -20px;
-    text-align: center;
-}
-
-.CaEnTuneles {
-    margin-top: 18px;
-    margin-left: 230px;
-    color: brown;
-}
-
-.DefinicionCaEnTuneles {
-    margin-top: 15px;
-    margin-left: 290px;
-    margin-right: 190px;
-}
-
-.ImgCaEnTuneles {
-    margin-top: -25px;
-    text-align: center;
-}
-
-.tituloCanalizacionesInternas {
-    margin-top: 19px;
-    font-size: 20px;
-    text-align: left;
-    margin-left: 180px;
-    color: #2e518b;
-}
-
-
-.defCaInternas {
-    margin-top: 12px;
-    margin-left: 252px;
-    margin-right: 220px;
-    color: black;
-    font-size: 16.5px;
-    text-align: justify;
-}
-
-
-.tituloCaMV {
-    margin-top: 18px;
-    margin-left: 230px;
-    color: maroon;
-}
-
-.DefinicionCaMv {
-    margin-top: 15px;
-    margin-left: 290px;
-    margin-right: 190px;
-}
-
-.ImgCaMV {
-    margin-top: -15px;
-    text-align: center;
-}
-
-.tituloCaMH {
-    margin-top: 18px;
-    margin-left: 230px;
-    color: maroon;
-}
-
-.DefinicionCaMH {
-    margin-top: 15px;
-    margin-left: 290px;
-    margin-right: 190px;
-}
-
-.ImgMHo {
-    text-align: center;
-}
-
-.tituloCaHorizontales {
-    margin-top: 20px;
-    font-size: 20px;
-    margin-left: 110px;
-    color: darkgoldenrod;
-    text-shadow: 0px 0px 0px black,
-        0px 1px 0.1px black,
-        -0.2px 0.2px 0px black,
-        0px -0.1px 0px black;
-}
-
-.DefinicionCaHorizontales {
-    margin-top: 20px;
-    margin-left: 170px;
-    margin-right: 170px;
-    text-align: justify;
-}
-
-.TDC {
-    margin-top: 18px;
-    margin-left: 200px;
-    color: darkmagenta;
-}
-
-.tituloDBP {
-    margin-top: 22px;
-    margin-left: 230px;
-    color: #0a1a2a;
-}
-
-.DefinicionDBP {
-    margin-top: 13px;
-    margin-top: 15px;
-    margin-left: 310px;
-    margin-right: 200px;
-}
-
-.ImgDBP {
-    text-align: center;
-}
-
-.tituloDBE {
-    margin-top: 22px;
-    margin-left: 230px;
-    color: #0a1a2a;
-}
-
-.DefinicionDBE {
-    margin-top: 13px;
-    margin-top: 15px;
-    margin-left: 310px;
-    margin-right: 200px;
-}
-
-.ImgDBE {
-    margin-top: -20px;
-    text-align: center;
-}
-
-.tituloDAparentes {
-    margin-top: 22px;
-    margin-left: 230px;
-    color: #0a1a2a;
-}
-
-.DefinicionDAparentes {
-    margin-top: 13px;
-    margin-top: 15px;
-    margin-left: 310px;
-    margin-right: 200px;
-}
-
-.ImgDAparentes {
-    margin-top: -20px;
-    text-align: center;
-}
-
-
-.tituloBandejas {
-    margin-top: 22px;
-    margin-left: 230px;
-    color: #0a1a2a;
-}
-
-.DefinicionBandejas {
-    margin-top: 13px;
-    margin-top: 15px;
-    margin-left: 310px;
-    margin-right: 200px;
-}
-
-.ImgBandejas {
-    margin-top: -19px;
-    text-align: center;
-}
-
-.tituloSCiellorraso {
-    margin-top: 22px;
-    margin-left: 230px;
-    color: #0a1a2a;
-}
-
-.DefinicionCielorraso {
-    margin-top: 13px;
-    margin-top: 15px;
-    margin-left: 310px;
-    margin-right: 200px;
-}
-
-.ImgCielorraso {
-    margin-top: -19px;
-    text-align: center;
-}
-
-.titulosDPerimetrales {
-    margin-top: 22px;
-    margin-left: 230px;
-    color: #0a1a2a;
-}
-
-.DefinicionDPerimetrales {
-    margin-top: 13px;
-    margin-top: 15px;
-    margin-left: 310px;
-    margin-right: 200px;
-}
-
-.ImgDPerimentrales {
-    margin-top: -19px;
-    text-align: center;
-}
-
-.tituloESC {
-    margin-top: 18px;
-    margin-left: 200px;
-    color: darkmagenta;
-}
-
-.defESC {
-    margin-top: 15px;
-    margin-left: 230px;
-}
-
-.ImgESC {
-    margin-top: -15px;
-    text-align: center;
-}
-
-.readMore_btn3 {
-    border: 1px solid black;
-    /*anchura, estilo y color borde*/
-    padding: 9px;
-    /*espacio alrededor texto*/
-    background-color: darkgoldenrod;
-    /*color botón*/
-    color: #101010;
-    /*color texto*/
-    text-decoration: none;
-    /*decoración texto*/
-    text-transform: uppercase;
-    /*capitalización texto*/
-    font-family: 'Helvetica', sans-serif;
-    /*tipografía texto*/
-    border-radius: 50px;
-    /*bordes redondos*/
-}
-
-
-/*Contenedor Tipos de cable*/
-.TiposDeCable {
-    background: url(Imagenes/Fondo4.jpeg);
-}
-
-.contedorTCable {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-.contenedorTCable .TC {
-    font-size: auto;
-    height: auto;
-    width: auto;
-    background: #DCFCFF;
-    text-align: center;
-    border-radius: 2rem;
-    box-shadow: 0 .3rem 3rem rgba(0, 0, 0, .4);
-    margin: 45px;
-    color: black;
-}
-
-.tituloTCable {
-    font-size: 45px;
-    text-align: center;
-    color: green;
-    justify-content: center;
-    text-shadow: 1px 0px 0px black,
-        0px 1px 0px black,
-        -1px -1px 0px black,
-        0px -1px 0px black;
-}
-
-.textoTC {
-    margin-top: 15px;
-    margin-left: 170px;
-    margin-right: 170px;
-    text-align: justify;
-}
-
-.textoFO {
-    margin-top: 15px;
-    margin-left: 70px;
-    margin-right: 170px;
-}
-
-.vimFO {
-    margin-top: -35px;
-    margin-left: 70px;
-    margin-right: 170px;
-}
-
-.th2 {
-    margin-left: 270px;
-}
-
-
-.readMore_btn4 {
-    border: 1px solid darkgreen;
-    /*anchura, estilo y color borde*/
-    padding: 9px;
-    /*espacio alrededor texto*/
-    background-color: darkgreen;
-    /*color botón*/
-    color: white;
-    /*color texto*/
-    text-decoration: none;
-    /*decoración texto*/
-    text-transform: uppercase;
-    /*capitalización texto*/
-    font-family: 'Helvetica', sans-serif;
-    /*tipografía texto*/
-    border-radius: 50px;
-    /*bordes redondos*/
-}
-
-
-/* Contenedor Servicios Convergentes*/
-.ServiciosConvergentes {
-    background: greenyellow;
-}
-
-.contenedorServiciosConvergentes {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-.contenedorServiciosConvergentes .SC {
-    font-size: auto;
-    height: auto;
-    width: 94%;
-    background: #E9F7BE;
-    text-align: center;
-    border-radius: 2rem;
-    box-shadow: 0 .3rem 3rem rgba(0, 0, 0, .4);
-    margin: 45px;
-    color: black;
-    justify-content: space-between;
-}
-
-.tituloSC{
-    font-size: 45px;
-    text-align: center;
-    color: darkslategray;
-    justify-content: center;
-    text-shadow: 1px 0px 0px black,
-        0px 1px 0px black,
-        -1px -1px 0px black,
-        0px -1px 0px black;
-}
-
-.defSC{
-    margin-top: 25px;
-}
-
-.ImgServiciosConvergentes{
-    text-align: center;
-    margin-top: -20px;
-}
-
-.tituloVOIP{
-    font-size: 27px;
-    margin-top: 18px;
-    margin-left: 200px;
-    color: purple;
-}
-
-.definicionVOIP{
-    text-align: justify;
-    margin-top: 12px;
-    margin-left: 200px;
-    margin-right: 150px;
-}
-
-.ImgSC{
-    text-align: center;
-}
-
-.tituloCCTV{
-    font-size: 27px;
-    margin-top: 18px;
-    margin-left: 200px;
-    color: purple;
-}
-
-.definicionCCTV{
-    text-align: justify;
-    margin-top: 12px;
-    margin-left: 200px;
-    margin-right: 150px;
-}
-
-.Tipos{
-    font-size: 27px;
-    margin-top: 18px;
-    margin-left: 200px;
-    color: darkslateblue;
-}
-
-.textoTipos{
-    text-align: justify;
-    margin-top: 12px;
-    margin-left: 234px;
-    margin-right: 234px;
-}
-
-.ImgCCTV{
-    text-align: center;
-}
-
-.readMore_btn6{
-    border: 1px solid darkred;
-    /*anchura, estilo y color borde*/
-    padding: 9px;
-    /*espacio alrededor texto*/
-    background-color: darkred;
-    /*color botón*/
-    color: white;
-    /*color texto*/
-    text-decoration: none;
-    /*decoración texto*/
-    text-transform: uppercase;
-    /*capitalización texto*/
-    font-family: 'Helvetica', sans-serif;
-    /*tipografía texto*/
-    border-radius: 50px;
-    /*bordes redondos*/
-}
-
-
-/* Contenedor Beneficios*/
-.Beneficios {
-    background: darkslateblue;
-}
-
-.contenedorBeneficios {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-.contenedorBeneficios .B {
-    font-size: auto;
-    height: auto;
-    width: 94%;
-    background: #E9F7BE;
-    text-align: center;
-    border-radius: 2rem;
-    box-shadow: 0 .3rem 3rem rgba(0, 0, 0, .4);
-    margin: 45px;
-    color: black;
-    justify-content: space-between;
-}
-
-.tituloB{
-    font-size: 45px;
-    text-align: center;
-    color: yellowgreen;
-    justify-content: center;
-    text-shadow: 1px 0px 0px black,
-        0px 1px 0px black,
-        -1px -1px 0px black,
-        0px -1px 0px black;
-}
-
-.definicionB{
-    text-align: justify;
-    margin-top: 15px;
-    margin-left: 150px;
-    margin-right: 150px;
-}
-
-.tituloAEYS{
-    margin-top: 12px;
-    margin-left: 100px;
-    color: darkslategrey;
-}
-
-.DefinicionAEYS{
-    text-align: justify;
-    margin-top: 15px;
-    margin-left: 180px;
-    margin-right: 180px;
-}
-
-.tituloIn{
-    margin-top: 12px;
-    margin-left: 100px;
-    color: darkslategrey;
-}
-
-.DefinicionIn{
-    text-align: justify;
-    margin-top: 15px;
-    margin-left: 180px;
-    margin-right: 180px;
-}
-
-.tituloFE{
-    margin-top: 12px;
-    margin-left: 100px;
-    color: darkslategrey;
-}
-
-.DefinicionFE{
-    text-align: justify;
-    margin-top: 15px;
-    margin-left: 180px;
-    margin-right: 180px;   
-}
-
-.tituloAR{
-    margin-top: 12px;
-    margin-left: 100px;
-    color: darkslategrey;
-}
-
-.DefinicionAR{
-    text-align: justify;
-    margin-top: 15px;
-    margin-left: 180px;
-    margin-right: 180px; 
-}
-
-.tituloMS{
-    margin-top: 12px;
-    margin-left: 100px;
-    color: darkslategrey;
-}
-
-.DefinicionMS{
-    text-align: justify;
-    margin-top: 15px;
-    margin-left: 180px;
-    margin-right: 180px; 
-}
-
-.tituloVis{
-    margin-top: 12px;
-    margin-left: 100px;
-    color: darkslategrey;
-}
-
-.DefinicionVis{
-    text-align: justify;
-    margin-top: 15px;
-    margin-left: 180px;
-    margin-right: 180px;    
-}
-
-.tituloAD{
-    margin-top: 12px;
-    margin-left: 100px;
-    color: darkslategrey;
-}
-
-.DefinicionAD{
-    text-align: justify;
-    margin-top: 15px;
-    margin-left: 180px;
-    margin-right: 180px;
-}
-
-.tituloAmp{
-    margin-top: 12px;
-    margin-left: 100px;
-    color: darkslategrey;
-}
-
-.DefinicionAmp{
-    text-align: justify;
-    margin-top: 15px;
-    margin-left: 180px;
-    margin-right: 180px;
-}
-
-.tituloAmol{
-    margin-top: 12px;
-    margin-left: 100px;
-    color: darkslategrey;
-}
-
-.DefinicionAmol{
-    text-align: justify;
-    margin-top: 15px;
-    margin-left: 180px;
-    margin-right: 180px;
-}
-
-.tituloRDC{
-    margin-top: 12px;
-    margin-left: 100px;
-    color: darkslategrey;
-}
-
-.DefinicionRDC{
-    text-align: justify;
-    margin-top: 15px;
-    margin-left: 180px;
-    margin-right: 180px;
-}
-
-
-/*Acerca de nosotros*/
-.acercaDeNosotros {
-    padding: 30px;
-    background: #1f1d1d;
-}
-
-.acercaDeNosotrosTitulo {
-    font-size: 50px;
-    color: white;
-}
-
-.box-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: justify;
-}
-
-.box-container .box {
-    font-size: auto;
-    height: 29rem;
-    width: 26rem;
-    background: #101010;
-    text-align: center;
-    border-radius: 2rem;
-    box-shadow: 0 .3rem 3rem rgba(0, 0, 0, .4);
-    margin: 4px;
-    color: white;
-}
-
-
-.tituloJoss {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.ImgJoss {
-    margin-top: 15px;
-    text-align: center;
-}
-
-.TextoJoss {
-    padding: 15px;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: justify;
-}
-
-.TextoJoss p {
-    font-size: 1.01rem;
-}
-
-
-.box-container .box1 {
-    font-size: auto;
-    height: 29rem;
-    width: 26rem;
-    background: white;
-    border-radius: 2rem;
-    box-shadow: 0 .3rem 3rem rgba(0, 0, 0, .4);
-    margin: 4px;
-}
-
-.tituloJimmy {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.ImgJimmy {
-    margin-top: 25px;
-    text-align: center;
-}
-
-.TextoJim {
-    padding: 15px;
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
-
-.TextoJim p {
-    font-size: 1.01rem;
-}
-
-
-.box-container .box2 {
-    font-size: auto;
-    height: 29.6rem;
-    width: 30rem;
-    background: #101010;
-    text-align: center;
-    border-radius: 2rem;
-    box-shadow: 0 .3rem 3rem rgba(0, 0, 0, .4);
-    margin: 4px;
-    color: #fff;
-}
-
-
-.tituloSteve {
-    margin-top: 17px;
-    text-align: center;
-}
-
-.ImgSteve {
-    margin-top: 15px;
-    text-align: center;
-}
-
-.TextoSteve {
-    padding: 14px;
-    margin-left: 17px;
-    margin-right: 17px;
-    text-align: justify;
-}
-
-.TextoSteve p {
-    font-size: 1.000001rem;
-}
-
-
-.box-container .box3 {
-    font-size: auto;
-    height: 35rem;
-    width: 29rem;
-    background: black;
-    text-align: center;
-    border-radius: 2rem;
-    box-shadow: 0 .3rem 3rem rgba(0, 0, 0, .4);
-    margin: 4px;
-    color: white;
-}
-
-
-.tituloJohan {
-    margin-top: 17px;
-    text-align: center;
-}
-
-.ImgJohan {
-    margin-top: 15px;
-    text-align: center;
-}
-
-.TextoJohan {
-    padding: 15px;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: justify;
-}
-
-.TextoJohan p {
-    font-size: 1.01rem;
-}
-
-
-.box-container .box4 {
-    font-size: auto;
-    height: 31rem;
-    width: 29rem;
-    background: #101010;
-    text-align: center;
-    border-radius: 2rem;
-    box-shadow: 0 .3rem 3rem rgba(0, 0, 0, .4);
-    margin: 4px;
-    color: #fff;
-}
-
-.tituloAnt {
-    margin-top: 17px;
-    text-align: center;
-}
-
-.ImgAnt {
-    margin-top: 15px;
-    text-align: center;
-}
-
-.TextoAnt {
-    padding: 15px;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: justify;
-}
-
-.TextoAnt p {
-    font-size: 1.01rem;
-}
-
-
-/*Pie de pagina*/
-.pie-pagina {
-    width: 100%;
-    background-color: #0a141d;
-}
-
-.pie-pagina .grupo-1 {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    padding: 45px 0px;
-}
-
-.pie-pagina .grupo-1 .caja figure {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.pie-pagina .grupo-1 .caja figure img {
-    width: 250px;
-}
-
-.pie-pagina .grupo-1 .caja h2 {
-    color: #fff;
-    margin-bottom: 25px;
-    font-size: 20px;
-}
-
-.pie-pagina .grupo-1 .caja p {
-    color: #efefef;
-    margin-bottom: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.pie-pagina .grupo-1 .red-social a {
-    display: inline-block;
-    text-decoration: none;
-    width: 45px;
+.logo-epn img {
     height: 45px;
-    line-height: 45px;
+    width: auto;
+    margin-left: 10px;
+}
+
+.right {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.nav-links a {
+    text-decoration: none;
     color: #fff;
-    margin-right: 10px;
-    background-color: #0d2033;
-    text-align: center;
-    transition: all 300ms ease;
+    margin-left: 20px;
+    font-size: 16px;
 }
 
-.pie-pagina .grupo-1 .red-social a:hover {
-    color: aqua;
+/* Estilos para las imágenes */
+.content-image {
+    text-align: center;
 }
 
-.pie-pagina .grupo2 {
-    background-color: #0a1a2a;
-    padding: 15px 10px;
+.content-image figure {
+    margin: 20px auto;
+}
+
+.content-image img {
+    max-width: 50%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.subsection {
+    background-color: #cbcbcb; /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px 0; /* Margen externo superior e inferior */
+    border-radius: 5px; /* Borde redondeado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    color: #333; /* Color del texto */
+    max-width: 800px; /* Ancho máximo del contenido */
+    text-align: justify; /* Alineación justificada del texto */
+}
+
+/* Estilos para el footer */
+.pie-pagina {
+    background-color: #333; /* Cambia el color de fondo a tu preferencia */
+    color: #fff; /* Cambia el color del texto a tu preferencia */
+    padding: 20px;
     text-align: center;
+}
+
+/* Estilos para el grupo de elementos */
+.grupo-1,
+.grupo2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para las cajas dentro del grupo */
+.caja {
+    flex: 1;
+    padding: 10px;
+}
+
+/* Estilos para las imágenes en las cajas */
+.caja img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para los títulos "CONTACTOS" y "SIGUENOS" */
+.caja h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los contactos */
+.caja p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Estilos para las redes sociales */
+.red-social {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+/* Estilos para los íconos de redes sociales */
+.red-social a {
+    text-decoration: none;
     color: #fff;
+    margin: 0 5px;
 }
 
-.pie-pagina .grupo2 small {
-    font-size: 15px;
+/* Estilos para el texto de derechos de autor */
+.grupo2 small {
+    font-size: 12px;
 }
 
-@media screen and (max-width:800px) {
-    .pie-pagina .grupo-1 {
-        width: 100%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
-    }
-}
+/* Estilo para la sección sobre nosotros */
+.about-us {
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+  
+  /* Estilo para el título de la sección */
+  .section-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para el título principal */
+  .title {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Estilo para el contenedor de las cajas */
+  .box-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Estilo para cada caja de perfil */
+  .box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  /* Estilo para el título de cada perfil */
+  .title h3 {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  /* Estilo para la imagen de perfil */
+  .profile-image {
+    margin: 0 auto;
+  }
+  
+  /* Estilo para el texto de perfil */
+  .text p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Estilo para la imagen de perfil */
+  .profile-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+  

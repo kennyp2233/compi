@@ -9,358 +9,330 @@
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <title> PROYECTO COMPILADORES</title>
 
-    <style>
-        table,
-        th,
-        td {
-            margin-left: 70px;
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-
-        th,
-        td {
-            padding: 10px;
-        }
-
-        td {
-            text-align: center;
-        }
-    </style>
-
 </head>
 
 <body>
 
-    <!-- Aqui creo una division logica para el encabezado
-    Cambiar el a por h1-->
-
-    <div CLASS="head">
-
-        <div class="nameU">
-            <b><a>ESCUELA POLITECNICA NACIONAL</a></b>
-        </div>
-
-        <section class="logoEPN">
-            <div>
+    <div class="main-header">
+        <div class="left">
+            <div class="logo">
+                <b><a href="#">ESCUELA POLITECNICA NACIONAL</a></b>
+            </div>
+            <div class="logo-epn">
                 <figure>
-                    <img src="Imagenes/EPN_logo.png" height="45px" weight="100%" alt="Logo EPN">
+                    <img src="Imagenes/EPN_logo.png" height="45px" width="auto" alt="Logo EPN">
                 </figure>
             </div>
-        </section>
-
-        <nav class="information">
-            <a href="">COMPILADORES</a>
-            <a href="">Acerca de Nostros</a>
-        </nav>
-
+        </div>
+        <div class="right">
+            <nav class="nav-links">
+                <a href="#">COMPILADORES</a>
+                <a href="#">Acerca de Nosotros</a>
+            </nav>
+        </div>
     </div>
 
-    <br>
-    <br>
-    <br>
 
-    <header class="content header">
-        <section class="cableadoEstructuradoTitulo">
-            <b>
-                <h3 class="title">COMPILADORES  </h3>
-            </b>
-        </section>
-        <br>
-        <section class="titulodefinicion">
-            <h2>1. Introducción a Compiladores </h2>
-        </section>
-        <div class="Definicion">
-            <b>
-                <p class="titulodef">
-                    A. Definición</p>
-                    
-                <p class="textoCE">
-                    Un compilador es un software o una herramienta de desarrollo que se utiliza para traducir programas 
-                    escritos en un lenguaje de programación de alto nivel, como C++, Java o Python, en código de máquina 
-                    o código objeto que puede ser ejecutado directamente por una computadora. En esencia, un compilador 
-                    toma el código fuente legible por humanos y lo convierte en un formato que la computadora puede entender 
-                    y ejecutar de manera eficiente..</p> 
-
-                <p class="titulodef2">
-                    B. Función de un compilador</p>
-
-                <p class="textoCE">
-                    La función principal de un compilador es transformar el código fuente de alto nivel en código de máquina, 
-                    lo que implica varias tareas clave:<br>
-                    <br>
-                    <span style="font-weight: bold; color: greenyellow;">1. Análisis Léxico:</span> El compilador escanea el código fuente y divide las secuencias de caracteres en elementos 
-                    llamados tokens, que representan las unidades más pequeñas del lenguaje, como palabras clave, identificadores y símbolos.<br> <br>
-                    <span style="font-weight: bold; color: greenyellow;">2. Análisis Sintáctico:</span> En esta etapa, se verifica la estructura gramatical del programa para asegurarse de que 
-                    siga las reglas de sintaxis del lenguaje de programación. Se crea un árbol de sintaxis abstracta que representa 
-                    la estructura jerárquica del programa. <br><br>
-                    <span style="font-weight: bold; color: greenyellow;">3. Análisis Semántico:</span>  El compilador verifica la coherencia semántica del programa. Esto incluye la comprobación 
-                    de tipos de datos, la resolución de nombres de variables y funciones, y la garantía de que el programa sea coherente 
-                    desde el punto de vista de la lógica.<br><br>
-                    <span style="font-weight: bold; color: greenyellow;">4. Generación de Código Intermedio:</span>  En algunas implementaciones, se genera un código intermedio que es una representación 
-                    simplificada del programa antes de la generación del código de máquina final.<br><br>
-                    <span style="font-weight: bold; color: greenyellow;">5. Optimización de Código (opcional):</span>  El compilador puede aplicar técnicas de optimización para mejorar la eficiencia 
-                    y el rendimiento del programa resultante.<br><br>
-                    <span style="font-weight: bold; color: greenyellow;">6. Generación de Código de Máquina:</span>  Finalmente, se genera el código de máquina específico para la arquitectura de la 
-                    computadora de destino, que es el código ejecutable.<br><br>
+    <header class="header">
+        <h1 class="header-title">COMPILADORES</h1>
+        <section class="section">
+            <h2 class="section-title">1. Introducción a Compiladores</h2>
+            <div class="section-content">
+                <h3 class="content-subtitle">A. Definición</h3>
+                <p class="content-text">
+                    Un compilador es un software o una herramienta de desarrollo que se utiliza para traducir programas
+                    escritos en un lenguaje de programación de alto nivel, como C++, Java o Python, en código de máquina
+                    o código objeto que puede ser ejecutado directamente por una computadora. En esencia, un compilador
+                    toma el código fuente legible por humanos y lo convierte en un formato que la computadora puede
+                    entender y ejecutar de manera eficiente.
                 </p>
-
-                <p class="titulodef4">
-                    C. Fases del proceso de compilación</p>
-
-                    <p class="textoCE">
-                        - Análisis Léxico. <br>
-                        - Análisis Sintáctico.<br>
-                        - Análisis Semántico.<br>
-                        - Generación de Código Intermedio.<br>
-                        - Optimización de Código (opcional).<br>
-                        - Generación de Código de Máquina.<br>
-                    </p>
-
-
-            <span class="hide" id="hideText">
-                <div>
-                    <p class="titulodef3">
-                        D. Diferencias entre compiladores e intérpretes</p>
-
-                    <p> <p class="titulodeff3">Compiladores </p>Traducen todo el código fuente a código de máquina antes de la ejecución.
-                        La traducción se realiza en una etapa previa a la ejecución.
-                        Generan archivos ejecutables independientes.
-                        Detectan errores de sintaxis y semántica durante la compilación.
-                        Ejemplos: GCC para C/C++, javac para Java.</p>
-
-                    <p> <p class="titulodeff3">Intepretes:</p> Traducen todo el código fuente a código de máquina antes de la ejecución.
-                        La traducción se realiza en una etapa previa a la ejecución.
-                        Generan archivos ejecutables independientes.
-                        Detectan errores de sintaxis y semántica durante la compilación.
-                        Ejemplos: GCC para C/C++, javac para Java.</p>
+                <h3 class="content-subtitle">B. Función de un compilador</h3>
+                <p class="content-text">
+                    La función principal de un compilador es transformar el código fuente de alto nivel en código de
+                    máquina, lo que implica varias tareas clave:<br>
+                    <br>
+                    <span class="content-bold">1. Análisis Léxico:</span> El compilador escanea el código fuente y
+                    divide las secuencias de caracteres en elementos llamados tokens, que representan las unidades más
+                    pequeñas del lenguaje, como palabras clave, identificadores y símbolos.<br> <br>
+                    <span class="content-bold">2. Análisis Sintáctico:</span> En esta etapa, se verifica la estructura
+                    gramatical del programa para asegurarse de que siga las reglas de sintaxis del lenguaje de
+                    programación. Se crea un árbol de sintaxis abstracta que representa la estructura jerárquica del
+                    programa. <br><br>
+                    <span class="content-bold">3. Análisis Semántico:</span> El compilador verifica la coherencia
+                    semántica del programa. Esto incluye la comprobación de tipos de datos, la resolución de nombres de
+                    variables y funciones, y la garantía de que el programa sea coherente desde el punto de vista de la
+                    lógica.<br><br>
+                    <span class="content-bold">4. Generación de Código Intermedio:</span> En algunas implementaciones,
+                    se genera un código intermedio que es una representación simplificada del programa antes de la
+                    generación del código de máquina final.<br><br>
+                    <span class="content-bold">5. Optimización de Código (opcional):</span> El compilador puede aplicar
+                    técnicas de optimización para mejorar la eficiencia y el rendimiento del programa
+                    resultante.<br><br>
+                    <span class="content-bold">6. Generación de Código de Máquina:</span> Finalmente, se genera el
+                    código de máquina específico para la arquitectura de la computadora de destino, que es el código
+                    ejecutable.<br><br>
+                </p>
+                <h3 class="content-subtitle">C. Fases del proceso de compilación</h3>
+                <ul class="content-list">
+                    <li>Análisis Léxico.</li>
+                    <li>Análisis Sintáctico.</li>
+                    <li>Análisis Semántico.</li>
+                    <li>Generación de Código Intermedio.</li>
+                    <li>Optimización de Código (opcional).</li>
+                    <li>Generación de Código de Máquina.</li>
+                </ul>
+                <div class="content-toggle">
+                    
+                    <div class="hidden-content" id="hidden-content1">
+                        <h3 class="content-subtitle">D. Diferencias entre compiladores e intérpretes</h3>
+                        <div class="content-differences">
+                            <div class="content-difference">
+                                <h4 class="content-subtitle">Compiladores</h4>
+                                <p>Traducen todo el código fuente a código de máquina antes de la ejecución. La
+                                    traducción se realiza en una etapa previa a la ejecución. Generan archivos
+                                    ejecutables independientes. Detectan errores de sintaxis y semántica durante la
+                                    compilación. Ejemplos: GCC para C/C++, javac para Java.</p>
+                            </div>
+                            <div class="content-difference">
+                                <h4 class="content-subtitle">Intérpretes:</h4>
+                                <p>Traducen todo el código fuente a código de máquina antes de la ejecución. La
+                                    traducción se realiza en una etapa previa a la ejecución. Generan archivos
+                                    ejecutables independientes. Detectan errores de sintaxis y semántica durante la
+                                    compilación. Ejemplos: GCC para C/C++, javac para Java.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </span>
-
-            <button class="readMore_btn" id="hideText_btn"> Leer más </button>
-        </div>
-
+                <div class="content-toggle"><button class="read-more-btn" id="toggle-content-btn1">Leer más</button></div>
+            </div>
+        </section>
     </header>
 
-
-    <section class="InfoCE">
-
-        <div class="CaracteristicasYTopologias">
-            <div class="contenedorCYT">
-                <div class="CYT">
-                    <div class="tituloCarYTopologias">
-                        <h3>LENGUAJES DE PROGRAMACIÓN</h3>
-                    </div>
-                    <p>
-                        Existe una gran variedad de lenguajes de programación pero en este caso se abordaran unicamente
-                        3 lenguajes principales que se han visto durante el curso.
-                    </p>
-                    <div class="TITULOCaracteristicas">
-                        <h3> JAVASCRIPT </h3>
-                    </div>
-                    <div class="Modularidad">
-                        
-                        <div class="defMod">
-                            <p>
-                                JavaScript es un lenguaje de programación ampliamente utilizado en desarrollo web. Aquí hay 
-                                algunos aspectos importantes de este lenguaje. <br><br>
-                                1. Lenguaje de Programación Web<br>
-                                2. Interpretado y de Alto Nivel<br>
-                                3. Compatibilidad con Navegadores<br>
-                                4. Ecosistema Robusto<br>
-                                5. Aplicaciones Móviles y Servidores<br>
-                                6. Comunidad Activa<br>
-                            </p>
-                        </div>
-                        <div class="ImgTB">
-                            <figure>
-                                <img src="Imagenes/JavaScript-Logo.png"
-                                    height="230px" weight="280px" alt="Repetidor">
-                            </figure>
-                        </div>
-                    </div>
-
-                    <div class="Flexibilidad">
-                        <div class="TITULOCaracteristicas">
-                            <h3>JAVA</h3>
-                        </div>
-                        <div class="defFlexibilidad">
-                            <p>
-                                Java es un lenguaje de programación de propósito general conocido por su portabilidad y su uso 
-                                en una amplia variedad de aplicaciones. Aunque es poco recomendable en el uso de interfaces graficas.
-                                Algunas caracteristicas relevantes:<br><br>
-                                1. Lenguaje de Programación Web<br>
-                                2. Interpretado y de Alto Nivel<br>
-                                3. Compatibilidad con Navegadores<br>
-                                4. Ecosistema Robusto<br>
-                                5. Aplicaciones Móviles y Servidores<br>
-                                6. Comunidad Activa<br>
-                            </p>
-                        </div>
-                        <div class="ImgTB">
-                            <figure>
-                                <img src="Imagenes/Java-Logo.jpg"
-                                    height="230px" weight="280px" alt="Repetidor">
-                            </figure>
-                        </div>
-                    </div>
-
-                    <div class="TecnologiaIntegrada">
-                        <div class="TITULOCaracteristicas">
-                            <h3>C++</h3>
-                        </div>
-                        <div class="defTI">
-                            <p>
-                                C++ es un lenguaje de programación ampliamente utilizado en aplicaciones de alto rendimiento y 
-                                sistemas complejos. información clave:<br><br>
-                                1. Lenguaje Multipropósito<br>
-                                2. Rendimiento y Eficiencia<br>
-                                3. Programación Orientada a Objetos<br>
-                                4. Uso en Juegos y Gráficos<br>
-                                5. Desarrollo de Sistemas Operativos<br>
-                            </p>
-                        </div>
-                        <div class="ImgTB">
-                            <figure>
-                                <img src="Imagenes/ISO_C++_Logo.svg.png"
-                                    height="230px" weight="280px" alt="Repetidor">
-                            </figure>
-                        </div>
-                    </div>
-
-                    <span class="hide1" id="hideText1">
-
-                        <div class="BajoCostoDeInstalacion">
-                            <div class="TITULOCaracteristicas">
-                                <h3>PYTHON</h3>
-                            </div>
-                            <div class="defBCI">
-                                <p>
-                                    Python es un lenguaje de programación conocido por su simplicidad y legibilidad. 
-                                    Algunos aspectos importantes de este lenguaje son:<br><br>
-                                    1. Lenguaje Multipropósito<br>
-                                    2. Rendimiento y Eficiencia<br>
-                                    3. Programación Orientada a Objetos<br>
-                                    4. Uso en Juegos y Gráficos<br>
-                                    5. Desarrollo de Sistemas Operativos<br>
-                                </p>
-                            </div>
-                            <div class="ImgTB">
-                                <figure>
-                                    <img src="Imagenes/Python-Symbol_0.png"
-                                        height="230px" weight="280px" alt="Repetidor">
-                                </figure>
-                            </div>
-                        </div>
-                    </span>
-                    <button class="readMore_btn1" id="hideText_btn1"> Leer más </button>
-                </div>
-            </div>
+    <section class="section">
+        <div class="header-title">
+            <h1>LENGUAJES DE PROGRAMACIÓN</h1>
+        </div>
+        <div class="content-text">
+            Existe una gran variedad de lenguajes de programación, pero en este caso se abordarán únicamente
+            3 lenguajes principales que se han visto durante el curso.
         </div>
 
+        <div class="section-content">
+            <div class="content-subtitle">JAVASCRIPT</div>
+            <div class="content-text">
+                JavaScript es un lenguaje de programación ampliamente utilizado en desarrollo web. Aquí hay algunos
+                aspectos importantes de este lenguaje:<br><br>
+                <ol class="content-list">
+                    <li>Lenguaje de Programación Web</li>
+                    <li>Interpretado y de Alto Nivel</li>
+                    <li>Compatibilidad con Navegadores</li>
+                    <li>Ecosistema Robusto</li>
+                    <li>Aplicaciones Móviles y Servidores</li>
+                    <li>Comunidad Activa</li>
+                </ol>
+            </div>
+            <div class="content-image">
+                <figure>
+                    <img src="Imagenes/JavaScript-Logo.png" height="230px" width="280px" alt="JavaScript Logo">
+                </figure>
+            </div>
 
-        <div class="Lexer">
-            <div class="contenedorCa">
-                <div class="Ca">
-                    <div class="tituloCanalizaciones">
-                        <b>
-                            <h1>2. LEXER</h1>
-                        </b>
+            <div class="content-text">
+                <div class="content-subtitle">
+                    <h3>JAVA</h3>
+                </div>
+                <div class="content-text">
+                    <p>
+                        Java es un lenguaje de programación de propósito general conocido por su portabilidad y
+                        su uso
+                        en una amplia variedad de aplicaciones. Aunque es poco recomendable en el uso de
+                        interfaces graficas.
+                        Algunas caracteristicas relevantes:<br><br>
+                        1. Lenguaje de Programación Web<br>
+                        2. Interpretado y de Alto Nivel<br>
+                        3. Compatibilidad con Navegadores<br>
+                        4. Ecosistema Robusto<br>
+                        5. Aplicaciones Móviles y Servidores<br>
+                        6. Comunidad Activa<br>
+                    </p>
+                </div>
+                <div class="content-image">
+                    <figure>
+                        <img src="Imagenes/Java-Logo.jpg" height="100px" weight="100px" alt="Repetidor">
+                    </figure>
+                </div>
+            </div>
+
+            <div class="content-text">
+                <div class="content-subtitle">
+                    <h3>C++</h3>
+                </div>
+                <div class="content-text">
+                    <p>
+                        C++ es un lenguaje de programación ampliamente utilizado en aplicaciones de alto
+                        rendimiento y
+                        sistemas complejos. información clave:<br><br>
+                        1. Lenguaje Multipropósito<br>
+                        2. Rendimiento y Eficiencia<br>
+                        3. Programación Orientada a Objetos<br>
+                        4. Uso en Juegos y Gráficos<br>
+                        5. Desarrollo de Sistemas Operativos<br>
+                    </p>
+                </div>
+                <div class="content-image">
+                    <figure>
+                        <img src="Imagenes/ISO_C++_Logo.svg.png" height="230px" weight="280px" alt="Repetidor">
+                    </figure>
+                </div>
+            </div>
+
+            
+            <div class="hidden-content" id="hidden-content2">
+                <div class="content-text">
+                    <div class="content-subtitle">
+                        <h3>PYTHON</h3>
                     </div>
-                    <div class="DefinicionCa">
+                    <div class="content-text">
                         <p>
-                            Lexer, también conocido como analizador léxico, es una parte esencial en el proceso de análisis de un lenguaje de programación. Su tarea principal es escanear el código fuente y dividirlo en tokens o lexemas, que son unidades léxicas reconocibles.
+                            Python es un lenguaje de programación conocido por su simplicidad y legibilidad.
+                            Algunos aspectos importantes de este lenguaje son:<br><br>
+                            1. Lenguaje Multipropósito<br>
+                            2. Rendimiento y Eficiencia<br>
+                            3. Programación Orientada a Objetos<br>
+                            4. Uso en Juegos y Gráficos<br>
+                            5. Desarrollo de Sistemas Operativos<br>
                         </p>
                     </div>
-                    <span class="hide3" id="hideText3">
-                        <div class="CanalizacionBackBone">
-                            <div class="tituloCB">
-                                <h1>5.1 FUNCIONES DEL LEXER</h1>
-                            </div>
-                            <div class="txtAdicional">
-                                <h3>El Lexer realiza las siguientes funciones:</h3>
-                                <ul>
-                                    <li>Identificación de palabras clave del lenguaje.</li>
-                                    <li>Reconocimiento de operadores y símbolos especiales.</li>
-                                    <li>Manejo de números y literales de cadena.</li>
-                                    <li>Eliminación de comentarios y espacios en blanco innecesarios.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="CanalizacionBackBone">
-                            <div class="tituloCB">
-                                <h1>5.2 IMPORTANCIA DEL LEXER</h1>
-                            </div>
-                            <div class="txtAdicional">
-                                <p>
-                                    El Lexer es una parte crucial en la compilación de programas. Su precisión y eficiencia son fundamentales para garantizar que el código fuente se interprete correctamente y se traduzca en instrucciones ejecutables.
-                                </p>
-                                <p>
-                                    Una implementación sólida del Lexer contribuye a la detección temprana de errores y facilita el desarrollo de herramientas de desarrollo de software, como editores de código y entornos de desarrollo integrados (IDE).
-                                </p>
-                            </div>
-                        </div>
-                        <div class="CanalizacionBackBone">
-                            <div class="tituloCB">
-                                <h1>5.3 PROCESO DE ANÁLISIS LÉXICO</h1>
-                            </div>
-                            <div class="txtAdicional">
-                                <p>
-                                    El análisis léxico es la primera etapa del proceso de compilación y consta de varias fases:
-                                </p>
-                                <ol>
-                                    <li>Escaneo: El Lexer recorre el código fuente carácter por carácter y divide el texto en tokens.</li>
-                                    <li>Identificación: Asigna un significado a cada token, como palabras clave, identificadores o símbolos.</li>
-                                    <li>Generación de la secuencia de tokens: Crea una secuencia de tokens reconocidos para que la siguiente fase del compilador los procese.</li>
-                                </ol>
-                            </div>
-                        </div>
-                        <div class="CanalizacionBackBone">
-                            <div class="tituloCB">
-                                <h1>5.4 EJEMPLO DE LEXER</h1>
-                            </div>
-                            <div class="txtAdicional">
-                                <p>
-                                    Un ejemplo simple de token generado por un Lexer en un lenguaje de programación podría ser un token para un número entero, un token para una cadena de texto o un token para un operador matemático.
-                                </p>
-                                <p>
-                                    Por ejemplo, en el código "x = 10 + y;", el Lexer podría generar tokens como "identificador: x", "operador de asignación: =", "número entero: 10", "operador de suma: +", "identificador: y" y "punto y coma: ;".
-                                </p>
-                            </div>
-                        </div>
-                    </span>
-                    <button class="readMore_btn3" id="hideText_btn3">Leer más</button>
+                    <div class="content-image">
+                        <figure>
+                            <img src="Imagenes/Python-Symbol_0.png" height="230px" weight="280px" alt="Repetidor">
+                        </figure>
+                    </div>
                 </div>
+                </span>
+            
             </div>
+            <div class="content-toggle"><button class="read-more-btn" id="toggle-content-btn2">Leer más</button></div>
+    </section>
+
+
+    <section class="section">
+        <div class="content-text">
+            <div class="content-subtitle">
+                <b>
+                    <h1>LEXER</h1>
+                </b>
+            </div>
+            <div class="DefinicionCa">
+                <p>
+                    Lexer, también conocido como analizador léxico, es una parte esencial en el proceso de
+                    análisis de un lenguaje de programación. Su tarea principal es escanear el código fuente y
+                    dividirlo en tokens o lexemas, que son unidades léxicas reconocibles.
+                </p>
+            </div>
+            
+            <div class="hidden-content" id="hidden-content3">
+                <div class="subsection">
+                    <div class="content-subtitle">
+                        <h1>5.1 FUNCIONES DEL LEXER</h1>
+                    </div>
+                    <div class="content-text">
+                        <h3>El Lexer realiza las siguientes funciones:</h3>
+                        <ul>
+                            <li>Identificación de palabras clave del lenguaje.</li>
+                            <li>Reconocimiento de operadores y símbolos especiales.</li>
+                            <li>Manejo de números y literales de cadena.</li>
+                            <li>Eliminación de comentarios y espacios en blanco innecesarios.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="subsection">
+                    <div class="tituloCB">
+                        <h1>5.2 IMPORTANCIA DEL LEXER</h1>
+                    </div>
+                    <div class="txtAdicional">
+                        <p>
+                            El Lexer es una parte crucial en la compilación de programas. Su precisión y
+                            eficiencia son fundamentales para garantizar que el código fuente se interprete
+                            correctamente y se traduzca en instrucciones ejecutables.
+                        </p>
+                        <p>
+                            Una implementación sólida del Lexer contribuye a la detección temprana de errores y
+                            facilita el desarrollo de herramientas de desarrollo de software, como editores de
+                            código y entornos de desarrollo integrados (IDE).
+                        </p>
+                    </div>
+                </div>
+                <div class="subsection">
+                    <div class="tituloCB">
+                        <h1>5.3 PROCESO DE ANÁLISIS LÉXICO</h1>
+                    </div>
+                    <div class="txtAdicional">
+                        <p>
+                            El análisis léxico es la primera etapa del proceso de compilación y consta de varias
+                            fases:
+                        </p>
+                        <ol>
+                            <li>Escaneo: El Lexer recorre el código fuente carácter por carácter y divide el
+                                texto en tokens.</li>
+                            <li>Identificación: Asigna un significado a cada token, como palabras clave,
+                                identificadores o símbolos.</li>
+                            <li>Generación de la secuencia de tokens: Crea una secuencia de tokens reconocidos
+                                para que la siguiente fase del compilador los procese.</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="subsection">
+                    <div class="tituloCB">
+                        <h1>5.4 EJEMPLO DE LEXER</h1>
+                    </div>
+                    <div class="txtAdicional">
+                        <p>
+                            Un ejemplo simple de token generado por un Lexer en un lenguaje de programación
+                            podría ser un token para un número entero, un token para una cadena de texto o un
+                            token para un operador matemático.
+                        </p>
+                        <p>
+                            Por ejemplo, en el código "x = 10 + y;", el Lexer podría generar tokens como
+                            "identificador: x", "operador de asignación: =", "número entero: 10", "operador de
+                            suma: +", "identificador: y" y "punto y coma: ;".
+                        </p>
+                    </div>
+                </div>
+                
+            </span>
+            
         </div>
-        
-        
+        <div class="content-toggle"><button class="read-more-btn" id="toggle-content-btn3">Leer más</button></div>
+    </section>
+
+
 
 
     </section>
 
 
-    <section class="acercaDeNosotros">
-        <section class="acercaDeNosotrosTitulo">
+    <section class="about-us">
+        <section class="section-title">
             <b>
-                <h1 class="title">ACERCA DE NOSOTROS</h1>
+                <h1 class="title">SOBRE NOSOTROS</h1>
             </b>
             <br>
         </section>
         <div class="box-container">
-
+    
             <div class="box">
-                <div class="tituloJoss">
+                <div class="title">
                     <b>
                         <h3>ALEXA...</h3>
                     </b>
                 </div>
-                <div class="ImgJoss">
-                    <figure class="JosselinNoguera">
-                        <img src="Imagenes/Alexa.jpg" height="180px" weight="100%" alt="Josselin Noguera">
+                <div class="image">
+                    <figure class="profile-image">
+                        <img src="Imagenes/Alexa.jpg" height="180px" width="50%" alt="Alexa Salazar">
                     </figure>
                 </div>
-                <div class="TextoJoss">
+                <div class="text">
                     <p>
                         Alexa Salazar nació en la ciudad de Quito-Ecuador en el año 2002. Desde
                         temprana edad mostró interés por el baile, por lo cual se podría decir que es su hobby, y ha
@@ -369,61 +341,54 @@
                     </p>
                 </div>
             </div>
-
-            <div class="box1">
-
-                <div class="tituloJimmy">
+    
+            <div class="box">
+                <div class="title">
                     <b>
                         <h3>KENNY MAURICIO PINCHAO JARAMILLO</h3>
                     </b>
                 </div>
-                <div class="ImgJimmy">
-                    <figure class="JimmyArias">
-                        <img src="Imagenes/149071.png" height="180px" weight="100%" alt="Jimmy Arias">
+                <div class="image">
+                    <figure class="profile-image">
+                        <img src="Imagenes/149071.png" height="180px" width="50%" alt="Kenny Mauricio Pinchao Jaramillo">
                     </figure>
                 </div>
-                <div class="TextoJim">
+                <div class="text">
                     <p>
-                        Kenny nacio el 2002
+                        Kenny nació en el año 2002.
                     </p>
                 </div>
             </div>
-
-
-            <div class="box3">
-                <div class="tituloJohan">
+    
+            <div class="box">
+                <div class="title">
                     <b>
                         <h3>JOHAN ROBERTO MANTILLA PANCHO</h3>
                     </b>
                 </div>
-                <div class="ImgJohan">
-                    <figure class="JohanMantilla">
-                        <img src="Imagenes/JohanMantilla.jpeg" height="180px" weight="100%" alt="Johan Mantilla">
+                <div class="image">
+                    <figure class="profile-image">
+                        <img src="Imagenes/JohanMantilla.jpeg" height="180px" width="50%" alt="Johan Roberto Mantilla Pancho">
                     </figure>
                 </div>
-                <div class="TextoJohan">
+                <div class="text">
                     <p>
-                        Johan Roberto Mantilla Pancho el nació el 18 de noviembre del año 2001 en la ciudad de Quito. Ha
-                        leído "Sangre de Campeones de
-                        Carlos
-                        Cuauhtémoc Sánchez", "La Guerra de los Mundos de
-                        HG. WELLS", etc.
-                        Él tiene habilidades para la programación, es muy creativo, le gusta escuchar y socializar.
-                        Práctica fútbol y
+                        Johan Roberto Mantilla Pancho nació el 18 de noviembre del año 2001 en la ciudad de Quito. Ha
+                        leído "Sangre de Campeones de Carlos Cuauhtémoc Sánchez", "La Guerra de los Mundos de HG. WELLS", etc.
+                        Él tiene habilidades para la programación, es muy creativo, le gusta escuchar y socializar. Practica fútbol y
                         un poco de tenis. Entre sus hobbies está escuchar música a toda hora, ver series como "The
                         walking Dead" y en especial le encanta jugar Video Juegos. Su película favorita es "Warcraft"
                         otros
                         datos es que
                         tiene conocimientos de programación en c, c++, c Sharp, visual basic, MySQL, java, SQL Server,
                         HTML,
-                        etc. Actualmente Estudia Ingeniería de Software en la Escuela Politécnica Nacional
+                        etc. Actualmente estudia Ingeniería de Software en la Escuela Politécnica Nacional.
                     </p>
                 </div>
             </div>
-
-
         </div>
     </section>
+    
 
     <footer class="pie-pagina">
         <div class="grupo-1">
