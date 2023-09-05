@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <title> PROYECTO COMPILADORES</title>
+
+    <style>
+        table,
+        th,
+        td {
+            margin-left: 70px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px;
+        }
+
+        td {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Aqui creo una division logica para el encabezado
+    Cambiar el a por h1-->
+
+    <div CLASS="head">
+
+        <div class="nameU">
+            <b><a>ESCUELA POLITECNICA NACIONAL</a></b>
+        </div>
+
+        <section class="logoEPN">
+            <div>
+                <figure>
+                    <img src="Imagenes/EPN_logo.png" height="45px" weight="100%" alt="Logo EPN">
+                </figure>
+            </div>
+        </section>
+
+        <nav class="information">
+            <a href="">COMPILADORES</a>
+            <a href="">Acerca de Nostros</a>
+        </nav>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <header class="content header">
+        <section class="cableadoEstructuradoTitulo">
+            <b>
+                <h3 class="title">COMPILADORES  </h3>
+            </b>
+        </section>
+        <br>
+        <section class="titulodefinicion">
+            <h2>1. Introducción a Compiladores </h2>
+        </section>
+        <div class="Definicion">
+            <b>
+                <p class="titulodef">
+                    A. Definición</p>
+                    
+                <p class="textoCE">
+                    Un compilador es un software o una herramienta de desarrollo que se utiliza para traducir programas 
+                    escritos en un lenguaje de programación de alto nivel, como C++, Java o Python, en código de máquina 
+                    o código objeto que puede ser ejecutado directamente por una computadora. En esencia, un compilador 
+                    toma el código fuente legible por humanos y lo convierte en un formato que la computadora puede entender 
+                    y ejecutar de manera eficiente..</p> 
+
+                <p class="titulodef2">
+                    B. Función de un compilador</p>
+
+                <p class="textoCE">
+                    La función principal de un compilador es transformar el código fuente de alto nivel en código de máquina, 
+                    lo que implica varias tareas clave:<br>
+                    <br>
+                    <span style="font-weight: bold; color: greenyellow;">1. Análisis Léxico:</span> El compilador escanea el código fuente y divide las secuencias de caracteres en elementos 
+                    llamados tokens, que representan las unidades más pequeñas del lenguaje, como palabras clave, identificadores y símbolos.<br> <br>
+                    <span style="font-weight: bold; color: greenyellow;">2. Análisis Sintáctico:</span> En esta etapa, se verifica la estructura gramatical del programa para asegurarse de que 
+                    siga las reglas de sintaxis del lenguaje de programación. Se crea un árbol de sintaxis abstracta que representa 
+                    la estructura jerárquica del programa. <br><br>
+                    <span style="font-weight: bold; color: greenyellow;">3. Análisis Semántico:</span>  El compilador verifica la coherencia semántica del programa. Esto incluye la comprobación 
+                    de tipos de datos, la resolución de nombres de variables y funciones, y la garantía de que el programa sea coherente 
+                    desde el punto de vista de la lógica.<br><br>
+                    <span style="font-weight: bold; color: greenyellow;">4. Generación de Código Intermedio:</span>  En algunas implementaciones, se genera un código intermedio que es una representación 
+                    simplificada del programa antes de la generación del código de máquina final.<br><br>
+                    <span style="font-weight: bold; color: greenyellow;">5. Optimización de Código (opcional):</span>  El compilador puede aplicar técnicas de optimización para mejorar la eficiencia 
+                    y el rendimiento del programa resultante.<br><br>
+                    <span style="font-weight: bold; color: greenyellow;">6. Generación de Código de Máquina:</span>  Finalmente, se genera el código de máquina específico para la arquitectura de la 
+                    computadora de destino, que es el código ejecutable.<br><br>
+                </p>
+
+                <p class="titulodef4">
+                    C. Fases del proceso de compilación</p>
+
+                    <p class="textoCE">
+                        - Análisis Léxico. <br>
+                        - Análisis Sintáctico.<br>
+                        - Análisis Semántico.<br>
+                        - Generación de Código Intermedio.<br>
+                        - Optimización de Código (opcional).<br>
+                        - Generación de Código de Máquina.<br>
+                    </p>
+
+
+            <span class="hide" id="hideText">
+                <div>
+                    <p class="titulodef3">
+                        D. Diferencias entre compiladores e intérpretes</p>
+
+                    <p> <p class="titulodeff3">Compiladores </p>Traducen todo el código fuente a código de máquina antes de la ejecución.
+                        La traducción se realiza en una etapa previa a la ejecución.
+                        Generan archivos ejecutables independientes.
+                        Detectan errores de sintaxis y semántica durante la compilación.
+                        Ejemplos: GCC para C/C++, javac para Java.</p>
+
+                    <p> <p class="titulodeff3">Intepretes:</p> Traducen todo el código fuente a código de máquina antes de la ejecución.
+                        La traducción se realiza en una etapa previa a la ejecución.
+                        Generan archivos ejecutables independientes.
+                        Detectan errores de sintaxis y semántica durante la compilación.
+                        Ejemplos: GCC para C/C++, javac para Java.</p>
+                </div>
+            </span>
+
+            <button class="readMore_btn" id="hideText_btn"> Leer más </button>
+        </div>
+
+    </header>
+
+
+    <section class="InfoCE">
+
+        <div class="CaracteristicasYTopologias">
+            <div class="contenedorCYT">
+                <div class="CYT">
+                    <div class="tituloCarYTopologias">
+                        <h3>LENGUAJES DE PROGRAMACIÓN</h3>
+                    </div>
+                    <p>
+                        Existe una gran variedad de lenguajes de programación pero en este caso se abordaran unicamente
+                        3 lenguajes principales que se han visto durante el curso.
+                    </p>
+                    <div class="TITULOCaracteristicas">
+                        <h3> JAVASCRIPT </h3>
+                    </div>
+                    <div class="Modularidad">
+                        
+                        <div class="defMod">
+                            <p>
+                                JavaScript es un lenguaje de programación ampliamente utilizado en desarrollo web. Aquí hay 
+                                algunos aspectos importantes de este lenguaje. <br><br>
+                                1. Lenguaje de Programación Web<br>
+                                2. Interpretado y de Alto Nivel<br>
+                                3. Compatibilidad con Navegadores<br>
+                                4. Ecosistema Robusto<br>
+                                5. Aplicaciones Móviles y Servidores<br>
+                                6. Comunidad Activa<br>
+                            </p>
+                        </div>
+                        <div class="ImgTB">
+                            <figure>
+                                <img src="Imagenes/JavaScript-Logo.png"
+                                    height="230px" weight="280px" alt="Repetidor">
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="Flexibilidad">
+                        <div class="TITULOCaracteristicas">
+                            <h3>JAVA</h3>
+                        </div>
+                        <div class="defFlexibilidad">
+                            <p>
+                                Java es un lenguaje de programación de propósito general conocido por su portabilidad y su uso 
+                                en una amplia variedad de aplicaciones. Aunque es poco recomendable en el uso de interfaces graficas.
+                                Algunas caracteristicas relevantes:<br><br>
+                                1. Lenguaje de Programación Web<br>
+                                2. Interpretado y de Alto Nivel<br>
+                                3. Compatibilidad con Navegadores<br>
+                                4. Ecosistema Robusto<br>
+                                5. Aplicaciones Móviles y Servidores<br>
+                                6. Comunidad Activa<br>
+                            </p>
+                        </div>
+                        <div class="ImgTB">
+                            <figure>
+                                <img src="Imagenes/Java-Logo.jpg"
+                                    height="230px" weight="280px" alt="Repetidor">
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="TecnologiaIntegrada">
+                        <div class="TITULOCaracteristicas">
+                            <h3>C++</h3>
+                        </div>
+                        <div class="defTI">
+                            <p>
+                                C++ es un lenguaje de programación ampliamente utilizado en aplicaciones de alto rendimiento y 
+                                sistemas complejos. información clave:<br><br>
+                                1. Lenguaje Multipropósito<br>
+                                2. Rendimiento y Eficiencia<br>
+                                3. Programación Orientada a Objetos<br>
+                                4. Uso en Juegos y Gráficos<br>
+                                5. Desarrollo de Sistemas Operativos<br>
+                            </p>
+                        </div>
+                        <div class="ImgTB">
+                            <figure>
+                                <img src="Imagenes/ISO_C++_Logo.svg.png"
+                                    height="230px" weight="280px" alt="Repetidor">
+                            </figure>
+                        </div>
+                    </div>
+
+                    <span class="hide1" id="hideText1">
+
+                        <div class="BajoCostoDeInstalacion">
+                            <div class="TITULOCaracteristicas">
+                                <h3>PYTHON</h3>
+                            </div>
+                            <div class="defBCI">
+                                <p>
+                                    Python es un lenguaje de programación conocido por su simplicidad y legibilidad. 
+                                    Algunos aspectos importantes de este lenguaje son:<br><br>
+                                    1. Lenguaje Multipropósito<br>
+                                    2. Rendimiento y Eficiencia<br>
+                                    3. Programación Orientada a Objetos<br>
+                                    4. Uso en Juegos y Gráficos<br>
+                                    5. Desarrollo de Sistemas Operativos<br>
+                                </p>
+                            </div>
+                            <div class="ImgTB">
+                                <figure>
+                                    <img src="Imagenes/Python-Symbol_0.png"
+                                        height="230px" weight="280px" alt="Repetidor">
+                                </figure>
+                            </div>
+                        </div>
+                    </span>
+                    <button class="readMore_btn1" id="hideText_btn1"> Leer más </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="Elementos">
+            <div class="ContenedorElementos">
+                <div class="CE">
+                    <div class="tituloElementos">
+                        <b>
+                            <h3>SISTEMAS OPERATIVOS</h3>
+                        </b>
+                    </div>
+                    <div class="DefECH">
+                        <p>
+                            Si bien es cierto se visualizaron algunos sistemas operativos, algunos interpretes y compiladores pero
+                            en este caso se hablara del sistema operativo que más se usu. Sistemas linux como ubuntu.
+                        </p>
+
+                    <div class="ECableadoHorizontal">
+                        <div class="tituloECH">
+                            <h2>UBUNTU</h2>
+                        </div>
+                        <div class="tituloECH1">
+                            <h2>Definición</h2>
+                        </div>
+                        <div class="DefECH">
+                            <p>
+                                Ubuntu es un sistema operativo basado en el núcleo del sistema operativo Linux, por lo que se encuentra dentro 
+                                de la categoría de sistemas operativos Linux. Linux es el núcleo o kernel del sistema, mientras que Ubuntu es 
+                                una distribución completa de sistema operativo que incluye el kernel Linux, así como un conjunto de utilidades, 
+                                bibliotecas y aplicaciones para crear un entorno operativo completo.
+                            </p>
+                        </div>
+                        <div class="tituloECH1">
+                            <h2>1. Ubuntu como Distribución Linux</h2>
+                        </div>
+                        <div class="DefECH">
+                            <p>
+                                <br>
+                                - Ubuntu es una distribución de Linux basada en Debian. Una distribución es una versión completa de un sistema 
+                                operativo Linux que incluye el núcleo (kernel) de Linux, herramientas del sistema, bibliotecas y aplicaciones.<br><br>
+                                - Ubuntu se caracteriza por su facilidad de uso, su amplia comunidad de usuarios y su enfoque en la accesibilidad
+                                y la experiencia del usuario
+                            </p>
+                        </div>
+                        <div class="tituloECH1">
+                            <h2>2. Núcleo Linux</h2>
+                        </div>
+                        <div class="DefECH">
+                            <p>
+                                <br>
+                                - El núcleo Linux es la parte central del sistema operativo que gestiona los recursos del hardware y proporciona 
+                                servicios esenciales. Es el corazón del sistema y es responsable de la comunicación con el hardware. <br><br>
+                                - Ubuntu utiliza el núcleo Linux como su componente fundamental para operar en hardware de arquitectura x86, ARM y otras.
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <span class="hide2" id="hideText2">
+                        <div class="ComponentesECH">
+                            <div class="cablesHorizontales">
+                                <div class="tituloECH1">
+                                    <h2>3. Arquitectura Linux</h2>
+                                </div>
+                                <div class="DefECH">
+                                    <p>
+                                        - Linux es un sistema operativo de código abierto y está disponible para una amplia gama de arquitecturas de hardware. 
+                                        Esto significa que puede ejecutarse en una variedad de dispositivos y plataformas, desde servidores y estaciones de 
+                                        trabajo hasta dispositivos móviles, sistemas embebidos y más. <br><br>
+                                        - Ubuntu, como distribución de Linux, admite múltiples arquitecturas, pero su versión principal está destinada a la 
+                                        arquitectura x86-64 (64 bits) que es común en computadoras de escritorio y servidores. También existen versiones 
+                                        específicas de Ubuntu para arquitecturas ARM, PowerPC y otras.
+                                    </p>
+                                </div>
+                                <div class="ImgTB">
+                                    <figure>
+                                        <img src="Imagenes/Ubuntu-logo.jpg" height="260px" weight="280px"
+                                            alt="Ubuntu">
+                                    </figure>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                    </span>
+                    <button class="readMore_btn2" id="hideText_btn2"> Leer más </button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="Canalizaciones">
+            <div class="contenedorCa">
+                <div class="Ca">
+                    <div class="tituloCanalizaciones">
+                        <b>
+                            <h1>4. CANALIZACIONES</h1>
+                        </b>
+                    </div>
+                    <div class="DefinicionCa">
+                        <p>
+                            Una canalización es la preparación del espacio para el tránsito de los cables. Es
+                            una
+                            construcción de trazado lineal
+                            que se compone con un conjunto de piezas que se colocan bajo la superficie de un
+                            terreno.
+                            Soportan y alojan los cables,
+                            y el resto de componentes de las redes de comunicación.
+                        </p>
+                    </div>
+                    <span class="hide3" id="hideText3">
+                        <div class="CanalizacionBackBone">
+                            <div class="tituloCB">
+                                <h1>4.1 CANALIZACIONES DE "BACK - BONE"</h1>
+                            </div>
+                            <div class="txtAdicional">
+                                <h3>Existen 2 tipos:</h3>
+                            </div>
+                            <div class="canalizacionesExternas">
+
+                                <div class="tituloCanalizacionesExt">
+                                    <b>
+                                        <h2>4.1.1. CANALIZACIONES EXTERNAS ENTRE EDIFICIOS</h2>
+                                    </b>
+                                </div>
+                                <div class="DefinicionCExternas">
+                                    <p>
+                                        Ocurre al exterior del edificio pues son necesarias para interconectar
+                                        las
+                                        “Instalaciones de Entrada” de varios edificios de una misma corporación
+                                        en
+                                        ambientes
+                                        del tipo “campus”. Según ANSI/TIA/EIA-569 se tiene cuatro tipos de
+                                        canalizaciones:
+                                        Subterráneas,
+                                        directamente enterradas, aéreas, y en túneles
+                                    </p>
+                                </div>
+
+                                <div class="canalizacionesSubterráneas">
+                                    <div class="tituloCaSubterraneas">
+                                        <h1>4.1.1.1. CANALIZACIONES SUBTERRÁNEAS </h1>
+                                    </div>
+                                    <div class="DefinicionCaSub">
+                                        <p> Es un sistema de ductos y cámaras de inspección. Los ductos
+                                            deben tener
+                                            un
+                                            diámetro mínimo de 100mm y no se admiten más de dos quiebres a
+                                            90
+                                            grados.</p>
+
+                                    </div>
+                                    <div class="ImgCaSubterranea">
+                                        <figure>
+                                            <img src="Imagenes/CanalizacionSuterranea.jpeg" height="210px"
+                                                weight="280px" alt="Repetidor">
+                                        </figure>
+                                    </div>
+                                </div>
+
+                                <div class="canalizacionesDirectamenteEnterradas">
+                                    <div class="tituloCaDEnterradas">
+                                        <h1>4.1.1.2. CANALIZACIONES DIRECTAMENTE ENTERRADAS</h1>
+                                    </div>
+                                    <div class="DefinicionCaDEnterradas">
+                                        <p> En estos casos los cables de comunicación quedan enterrados. Los
+                                            cables
+                                            deben tener protección adecuadas.</p>
+                                    </div>
+                                    <div class="ImgCaDEnterradas">
+                                        <figure>
+                                            <img src="Imagenes/CanalizaciónDirectamenteEnterrado.jpg" height="230px"
+                                                weight="280px" alt="Repetidor">
+                                        </figure>
+                                    </div>
+                                </div>
+
+
+                                <div class="CaAereos">
+                                    <div class="tituloCAAereo">
+                                        <h1>4.1.1.3. BACKBONE AÉREOS</h1>
+                                    </div>
+                                    <div class="DefinicionCaAereos">
+                                        <p>Básicamente hace referencia a tender cables aéreos. De donde se
+                                            tiene que
+                                            considerar algunos aspectos. La apariencia del edificio y las
+                                            áreas
+                                            circundantes, Separación requerida con cableados aéreos
+                                            eléctricos y las
+                                            protecciones mecánicas.</p>
+                                    </div>
+                                    <div class="ImgCaAereo">
+                                        <figure>
+                                            <img src="Imagenes/Backbone aéreo.jpg" height="230px" weight="210px"
+                                                alt="Repetidor">
+                                        </figure>
+                                    </div>
+                                </div>
+
+                                <div class="CanalizacionesEnTúneles">
+                                    <div class="CaEnTuneles">
+                                        <h1>4.1.1.4. CANALIZACIONES EN TÚNELES</h1>
+                                    </div>
+                                    <div class="DefinicionCaEnTuneles">
+                                        <p>La ubicación de las canalizaciones dentro de túneles debe ser
+                                            planificadas y organizadas de manera que permitan el correcto y
+                                            eficiente acceso al personal de mantenimiento, y también la separación
+                                            necesaria con otros servicios.</p>
+                                    </div>
+                                    <div class="ImgCaEnTuneles">
+                                        <figure>
+                                            <img src="Imagenes/CanalizacionEnTuneles.jpg" height="260px" weight="280px"
+                                                alt="Repetidor">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="canalizacionesInternas">
+                                <div class="tituloCanalizacionesInternas">
+                                    <b>
+                                        <h2>4.1.2 CANALIZACIONES INTERNAS</h2>
+                                    </b>
+                                </div>
+                                <div class="defCaInternas">
+                                    <p>
+                                        son las canalizaciones internas al y/o dentro del edificio
+                                        Mejor conocidas como “montanes” son las que vinculan las instalaciones
+                                        de
+                                        entrada con la sala de equipos, y la sala de equipos con los armarios de
+                                        telecomunicaciones. Existen 2 tipos:
+                                    </p>
+                                </div>
+                                <div class="CanalizacionMontanesVerticales">
+                                    <div class="tituloCaMV">
+                                        <h1>4.1.2.1. CANALIZACIÓN MONTANTES VERTICALES</h1>
+                                    </div>
+
+                                    <div class="DefinicionCaMv">
+                                        <p>Son necesarios para unir la sala de equipos con los armarios de
+                                            telecomunicaciones o las instalaciones de entrada con la sala de
+                                            equipos
+                                            en edificios de varios pisos. Normalmente, en edificios de
+                                            varios pisos
+                                            los armarios de telecomunicaciones se encuentran alineados
+                                            verticalmente
+                                            y una canalización vertical pasa por cada piso desde la sala de
+                                            equipos.
+                                        </p>
+                                    </div>
+                                    <div class="ImgCaMV">
+                                        <figure>
+                                            <img src="Imagenes/CanalizaciónMontantesVerticalesYHorizontales.jpg"
+                                                height="230px" weight="280px" alt="Repetidor">
+                                        </figure>
+                                    </div>
+                                </div>
+
+                                <div class="CanalizacionMontanesHorizontales">
+                                    <div class="tituloCaMH">
+                                        <h1>4.1.2.2. CANALIZACIÓN MONTANTES HORIZONTALES</h1>
+                                    </div>
+
+                                    <div class="DefinicionCaMH">
+                                        <p>Si los armarios de telecomunicaciones no están alineados
+                                            verticalmente,
+                                            son necesarios tramos de “montantes” horizontales. Estas
+                                            canalizaciones
+                                            podrán ser construidas con ductos, bandejas horizontales, o
+                                            escalerillas
+                                            porta cables y pueden ser ubicadas solo el cielorraso, debajo
+                                            del piso o
+                                            adosada a las paredes.
+                                        </p>
+                                    </div>
+                                    <div class="ImgMHo">
+                                        <figure>
+                                            <img src="Imagenes/MontanesHorizontales.jpg" height="230px" weight="280px"
+                                                alt="Repetidor">
+                                        </figure>
+                                    </div>
+                                    <!-- aqui va imagen -->
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="CanalizacionesHorizontales">
+                            <div class="tituloCaHorizontales">
+                                <h2>4.2 CANALIZACIONES HORIZONTALES</h2>
+                            </div>
+                            <div class="DefinicionCaHorizontales">
+                                <p>
+                                    Son aquellas que vinculan los armarios (o salas) de telecomunicaciones con
+                                    las áreas
+                                    de trabajo. Las canalizaciones deben ser diseñadas para albergar los tipos
+                                    de cables
+                                    recomendados en la norma TIA-568, entre los que se incluyen el cable UTP, el
+                                    cable
+                                    STP y la fibra óptica.
+                                </p>
+                            </div>
+                            <div class="TDC">
+                                <h3>4.2.1 TIPOS DE CANALIZACIONES</h3>
+                            </div>
+
+                            <div class="DuctosBajoElPiso">
+                                <div class="tituloDBP">
+                                    <h1>4.2.1.1. DUCTOS BAJO EL PISO </h1>
+                                </div>
+
+                                <div class="DefinicionDBP">
+                                    <p>En estos casos los ductos son parte de la obra civil. Bajo el piso se puede
+                                        realizar una malla de ductos, disponiendo de líneas determinadas para
+                                        telecomunicaciones, energía, etc. En las áreas de trabajo se dispone de
+                                        puntos de acceso a los ductos bajo
+                                    </p>
+                                </div>
+                                <div class="ImgDBP">
+                                    <figure>
+                                        <img src="Imagenes/DuctoBP.jpg" height="260px" weight="280px" alt="Repetidor">
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <div class="DuctosBajoPisoElevado">
+                                <div class="tituloDBE">
+                                    <h1>4.2.1.2. DUCTOS BAJO PISO ELEVADO</h1>
+                                </div>
+
+                                <div class="DefinicionDBE">
+                                    <p>Los pisos elevados consisten en un sistema de soportes sobre el que
+                                        apoyan
+                                        lozas cuadradas. Generalmente son utilizados en salas de equipos y
+                                        pueden
+                                        ser también utilizados para oficinas. Debajo de este sistema de
+                                        soportes
+                                        puede ser instalado un sistema de ductos para cableado de
+                                        telecomunicaciones, de energía, etc. No se recomienda tender cables
+                                        “sueltos” debajo del piso elevado.
+                                    </p>
+                                </div>
+                                <div class="ImgDBE">
+                                    <figure>
+                                        <img src="Imagenes/DuctoPE.jpg" height="260px" weight="280px" alt="Repetidor">
+                                    </figure>
+                                </div>
+                            </div>
+
+
+                            <div class="DuctosAparentes">
+                                <div class="tituloDAparentes">
+                                    <h1>4.2.1.3. DUCTOS APARENTES</h1>
+                                </div>
+
+                                <div class="DefinicionDAparentes">
+                                    <p>Pueden ser metálicos o de PVC, rígidos en ambos casos. Las
+                                        características de
+                                        estos ductos y de su instalación deben ser acordes a los requisitos
+                                        arquitectónicos. Se recomienda que no existan tramos mayores a 30
+                                        metros sin
+                                        puntos de registro e inspección, y que no existan más de dos
+                                        quiebres de 90
+                                        grados en cada tramo.
+                                    </p>
+                                </div>
+                                <div class="ImgDAparentes">
+                                    <figure>
+                                        <img src="Imagenes/DuctosAparentes.jpg" height="230px" weight="230px"
+                                            alt="Repetidor">
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <div class="Bandejas">
+                                <div class="tituloBandejas">
+                                    <h1>4.2.1.4. BANDEJAS</h1>
+                                </div>
+
+                                <div class="DefinicionBandejas">
+                                    <p>Las bandejas portacables son estructuras rígidas, metálicas o de PVC,
+                                        normalmente en forma de U. La base y las paredes laterales pueden ser
+                                        sólidas o caladas. Las bandejas de este tipo pueden o no tener tapa. Las
+                                        bandejas se instalan generalmente sobre el cielorraso, aunque pueden ser
+                                        instaladas debajo del cielorraso, o adosadas a las paredes.
+                                    </p>
+                                </div>
+                                <div class="ImgBandejas">
+                                    <figure>
+                                        <img src="Imagenes/Bandejas.jpg" height="260px" weight="250px" alt="Repetidor">
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <div class="DuctosSobreCielorraso">
+                                <div class="tituloSCiellorraso">
+                                    <h1>4.2.1.5. DUCTOS SOBRE CIELORRASO</h1>
+                                </div>
+
+                                <div class="DefinicionCielorraso">
+                                    <p>Son utilizados, siempre y cuando su acceso sea sencillo, por ejemplo,
+                                        removiendo planchas livianas de cielorraso. Los ductos o bandejas
+                                        sobre
+                                        cielorraso deben estar adecuadamente fijados al techo, por medio de
+                                        colgantes. No se recomienda que estén directamente apoyadas sobre la
+                                        estructura propia del cielorraso. Los cables sobre cielorraso no
+                                        pueden
+                                        estar sueltos, apoyados directamente sobre el cielorraso, sino que
+                                        deben
+                                        estar dentro de ductos o bandejas.
+                                    </p>
+                                </div>
+                                <div class="ImgCielorraso">
+                                    <figure>
+                                        <img src="Imagenes/DuctoCielorraso.jpg" height="260px" weight="280px"
+                                            alt="Repetidor">
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <div clas="DuctosPerimetrales">
+                                <div class="titulosDPerimetrales">
+                                    <h1>4.2.1.6 DUCTOS PERIMETRALES</h1>
+                                </div>
+
+                                <div class="DefinicionDPerimetrales">
+                                    <p>Los ductos perimetrales pueden ser usados para llegar con el cableado
+                                        horizontal hasta las áreas de trabajo, en caso de oficinas cerradas
+                                        o tipo
+                                        “boxes”.
+                                    </p>
+                                </div>
+                                <div class="ImgDPerimentrales">
+                                    <figure>
+                                        <img src="Imagenes/DuctoPerimetral.jpg" height="260px" weight="280px"
+                                            alt="Repetidor">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="EspacioYSeccionesDeCanalización">
+                            <div class="tituloESC">
+                                <h1>4.2.2 ESPACIO Y SECCIONES DE CANALIZACIÓN</h1>
+                            </div>
+                            <div class="defESC">
+                                <p>• Cada área de trabajo debe disponer de al menos dos cables UTP(4.5 y 5.5
+                                    mm de
+                                    diametro)</p>
+                            </div>
+                            <div class="ImgESC">
+                                <figure>
+                                    <img src="Imagenes/TablaDeSeccionesYCanalizaciones.jpg" height="260px"
+                                        weight="280px" alt="Repetidor">
+                                </figure>
+                            </div>
+                        </div>
+                    </span>
+                    <button class="readMore_btn3" id="hideText_btn3"> Leer más </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="TiposDeCable">
+            <div class="contenedorTCable">
+                <div class="TC">
+                    <div class="tituloTCable">
+                        <b>
+                            <h3>5. TIPOS DE CLAVES</h3>
+                        </b>
+                    </div>
+                    <div class="textoTC">
+                        <p>
+                            Los sistemas de cableado UTP dentro del cableado estructurado han ido evolucionado
+                            para
+                            soportar mayores velocidades y arquitecturas de red más complejas que permitan una
+                            gestión
+                            eficiente para los edificios.
+                        </p>
+                    </div>
+                    <div class="TablaCategoriasUTP">
+                        <span class="hide4" id="hideText4">
+
+                            <table style="width: 90%;">
+                                <td bgcolor="yellow">CATEGORIA</td>
+                                <td bgcolor="yellow">DESCRIPCION</td>
+                                <td bgcolor="yellow">VELOCIDAD</td>
+                                <td bgcolor="yellow">FRECUENCIA</td>
+                                <tr>
+                                    <td bgcolor="lime">Cat 1</td>
+                                    <td>Es usado para comunicaciones telefónicas POTS y ISDN</td>
+                                    <td>no alcanzan los 512 kbit/s</td>
+                                    <td>1MHZ</td>
+                                </tr>
+                                <tr>
+                                    <td bgcolor="lime">Cat 2</td>
+                                    <td>Usado para redes token ring</td>
+                                    <td>4 Mbit/s</td>
+                                    <td>4MHZ</td>
+                                </tr>
+                                <tr>
+                                    <td bgcolor="lime">Cat 3</td>
+                                    <td>Es usado para redes 10BaseT</td>
+                                    <td>10Mbit/s</td>
+                                    <td>16MHZ</td>
+                                </tr>
+                                <tr>
+                                    <td bgcolor="lime">Cat 4</td>
+                                    <td>Utilizado en redes token ring</td>
+                                    <td>16 Mbit/s</td>
+                                    <td>20MHZ</td>
+                                </tr>
+                                <tr>
+                                    <td bgcolor="lime">Cat 5</td>
+                                    <td>Usado en redes Ethernet y fast Ethernet</td>
+                                    <td>100Mbit/s</td>
+                                    <td>100MHZ</td>
+                                </tr>
+                                <tr>
+                                    <td bgcolor="lime">Cat 5e</td>
+                                    <td>Usado en redes fast ethernet y gigabit ethernet</td>
+                                    <td>1 Gbit/s</td>
+                                    <td>100MHZ</td>
+                                </tr>
+                                <tr>
+                                    <td bgcolor="lime">Cat 6</td>
+                                    <td>Es el cable estandarizado para Gigabit Ethernet</td>
+                                    <td>1 Gbit/s</td>
+                                    <td>250MHZ</td>
+                                </tr>
+                                <tr>
+                                    <td bgcolor="lime">Cat 6a</td>
+                                    <td>Tiene un alto rendimiento y es usado para redes 100GBase-T</td>
+                                    <td>10 Gbit/s</td>
+                                    <td>500MHZ</td>
+                                </tr>
+                                <tr>
+                                    <td bgcolor="lime">Cat 7</td>
+                                    <td>Es usado para redes 10 gigabit ethernet</td>
+                                    <td>10 Gbit/s</td>
+                                    <td>600MHZ</td>
+                                </tr>
+                                <tr>
+                                    <td bgcolor="lime">Cat 7a</td>
+                                    <td>Se emplea en redes 10 gigabit ethernet</td>
+                                    <td>10 Gbps</td>
+                                    <td>1000MHZ</td>
+                                </tr>
+                                <tr>
+                                    <td bgcolor="lime">Cat 8</td>
+                                    <td>Es la última especificación para el cable UTP</td>
+                                    <td>25 a 40 Gbps</td>
+                                    <td>2000MHZ</td>
+                                </tr>
+                            </table>
+
+                            <div class="tablaFibraOptica">
+                                <br>
+                                <br>
+                                <div class="textoFO">
+                                    <p>
+                                        Para usar fibra óptica se tiene que tomar en cuenta ciertos estándares
+                                        que
+                                        permitirán distinguir cada cable.
+                                    </p>
+                                </div>
+                                <div class="vimFO">
+                                    <p>
+                                        <br>- LTU: Cable de fibra óptica sin armadura de tubo holgado
+                                        <br>- LTT: Cable de fibra óptica armado con cinta de acero y tubo holgado
+                                        <br>- LTW: Cable de fibra óptica con armadura de alambre de acero y tubo holgado
+                                        <br>- TBU: Cable de fibra óptica sin armadura con tubo ajustado
+                                        <br>- MTU: Cable de fibra óptica sin armadura de multitubo holgado
+                                        <br>- MTT: Cable de fibra óptica armado con cinta de acero y multitubo holgado
+                                        <br>- MTW: Cable de fibra óptica con armadura de alambre de acero y multitubo
+                                        holgado
+
+                                    </p>
+                                </div>
+
+                                <table class="th2" style="width: 60%;">
+                                    <td bgcolor="orange">TIPO</td>
+                                    <td bgcolor="orange">SUBTIPO</td>
+                                    <td bgcolor="orange">TAMAÑO</td>
+                                    <td bgcolor="orange">VELOCIDAD</td>
+                                    <tr>
+                                        <td>Multimodo</td>
+                                        <td>OM1</td>
+                                        <td>62.5/125 µm</td>
+                                        <td>100 Mbps</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Multimodo</td>
+                                        <td>OM2</td>
+                                        <td>50/125 µm</td>
+                                        <td>1 Gbps</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Multimodo</td>
+                                        <td>OM3</td>
+                                        <td>50/125 µm</td>
+                                        <td>10 Gbps</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Multimodo</td>
+                                        <td>OM4</td>
+                                        <td>50/125 µm</td>
+                                        <td>40 - 100 Gbps</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Monomodo</td>
+                                        <td>OS1</td>
+                                        <td>9/125 µm</td>
+                                        <td>1- 10 Gbps</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Monomodo</td>
+                                        <td>OS2</td>
+                                        <td>9/125 µm</td>
+                                        <td>1 - 10 Gbps</td>
+                                    </tr>
+                                </table>
+
+                            </div>
+                        </span>
+                    </div>
+                    <button class="readMore_btn4" id="hideText_btn4"> Leer más </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="DispositivosDeInterconexión">
+            <div class="contenedorDI">
+                <div class="DI">
+                    <div class="tituloDI">
+                        <b>
+                            <h2>6. DISPOSITIVOS DE INTERCONEXIÓN</h2>
+                        </b>
+                    </div><b>
+                        <h3 class="preguntaDI">¿Qué son los dispositivos de interconexión de redes y cuáles son
+                            los
+                            mejores?
+                        </h3>
+                    </b>
+                    <p class="textoDefDI">
+                        Un dispositivo de interconexión de redes es un término ampliamente utilizado para
+                        cualquier
+                        hardware
+                        que conecte diferentes recursos de red. Los dispositivos clave que comprenden una red
+                        son
+                        conmutadores, enrutadores, bridge (puentes), repetidores y puertas de enlace.
+                        Todos los dispositivos tienen características de alcance por separado, según los
+                        requisitos y
+                        escenarios de la red. <br>Los siguientes son escenarios de interconexión:</br>
+                    <div class="textvi">
+                        <p>• Una sola LAN
+                            <br>• Dos LAN conectadas entre sí (LAN-LAN)
+                            <br>• Una LAN conectada a una WAN (LAN-WAN)
+                            <br>• Dos LAN conectadas a través de una WAN (LAN-WAN-LAN)
+                        </p>
+                    </div>
+                    <p class="textoDefDI1">Para entender los diversos dispositivos de interconexión de redes,
+                        creamos el
+                        siguiente
+                        glosario.</p>
+                    <span class="hide5" id="hideText5">
+                        <div class="repetidores">
+                            <div class="tituloRepetidores">
+                                <b>
+                                    <h3>REPETIDORES</h3>
+                                </b>
+                            </div>
+                            <div class="columna1Izq">
+                                <p> Se utilizan para extender la longitud de la red. Fueron creados para
+                                    regenerar y
+                                    amplificar
+                                    señales débiles, extendiendo así la longitud de la red. La función básica de
+                                    un
+                                    repetidor es
+                                    remodelar y reamplificar la señal de datos a su nivel original.
+                                    Las características importantes de estos equipos son las siguientes:
+                                </p>
+                                <p class="vi">1. Conectar diferentes segmentos de red de una LAN</p>
+                                <p class="vi">2. Reenviar cada paquete que recibe</p>
+                                <p class="vi">3. Un repetidor es un regenerador, no un amplificador</p>
+                                <p class="vi">4. Los repetidores operan en la capa física del modelo OSI</p>
+
+                            </div>
+                            <div class="columna2Der">
+                                <figure class="Repetidor">
+                                    <img src="Imagenes/Repetidor.jpg" height="260px" weight="280px" alt="Repetidor">
+                                </figure>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="Hubs">
+                            <div class="tituloHubs">
+                                <b>
+                                    <h3>HUBS</h3>
+                                </b>
+                            </div>
+                            <div class="columna1Der">
+                                <p> Un Hub es básicamente un repetidor multipuerto, actúa como concentrador y
+                                    conecta
+                                    múltiples
+                                    cables
+                                    provenientes de diferentes conexiones. Los concentradores no pueden filtrar
+                                    datos,
+                                    por
+                                    lo
+                                    que los paquetes de datos se envían a todos los dispositivos conectados, el
+                                    dominio
+                                    de
+                                    colisión de todos los hosts conectados a través de Hub sigue siendo uno.
+                                    Los Hubs no tienen inteligencia para encontrar la mejor ruta para los
+                                    paquetes, las
+                                    consecuencias: ineficiencia y desperdicio.
+                                </p>
+                            </div>
+                            <div class="columna2Izq">
+                                <figure>
+                                    <img src="Imagenes/hub.jpg" height="240px" weight="250px" alt="Hub">
+                                </figure>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="bridge">
+                            <div class="tituloBridge">
+                                <b>
+                                    <h3>BRIDGE</h3>
+                                </b>
+                            </div>
+                            <div class="columna1IzqB">
+                                <p>
+                                    Un bridge o un puente opera en la capa de enlace de datos. Es un repetidor
+                                    con
+                                    funcionalidad
+                                    adicional de filtrado al leer las direcciones MAC de origen y destino.
+                                    También se
+                                    usa
+                                    para
+                                    interconectar dos LAN que funcionan en el mismo protocolo. Tiene un puerto
+                                    de
+                                    entrada y
+                                    salida único, lo que lo convierte en un dispositivo de 2 puertos.
+                                </p>
+                            </div>
+                            <div class="columna2DerB">
+                                <figure>
+                                    <img src="Imagenes/Bridge.png" height="230px" weight="250px" alt="Repetidor">
+                                </figure>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="switch">
+                            <div class="tituloSwitch">
+                                <b>
+                                    <h3>SWITCH O CONMUTADOR</h3>
+                                </b>
+                            </div>
+                            <div class="columna1DerSw">
+                                <p>
+                                    El switch es un puente de múltiples puertos, es un dispositivo de capa de
+                                    enlace de
+                                    datos.
+                                    El conmutador es muy eficiente, realiza una verificación de errores antes de
+                                    reenviar
+                                    paquetes. En otras palabras, el conmutador divide el dominio de colisión de
+                                    los
+                                    hosts,
+                                    pero
+                                    el dominio de difusión sigue siendo el mismo.
+                                </p>
+                            </div>
+                            <div class="columna2IzqSw">
+                                <figure>
+                                    <img src="Imagenes/Switch.jpg" height="230px" weight="300px" alt="Repetidor">
+                                </figure>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="router">
+                            <div class="tituloRouter">
+                                <b>
+                                    <h3>ROUTER</h3>
+                                </b>
+                            </div>
+                            <div class="columna1IzqR">
+                                <p>
+                                    Los enrutadores enlazan dos o más redes diferentes, estas pueden constar de
+                                    varios
+                                    tipos
+                                    de
+                                    segmentos de red LAN. Un enrutador recibe paquetes y selecciona la ruta
+                                    óptima para
+                                    reenviar
+                                    el paquete a través de la red.
+                                    Los enrutadores crean una tabla de todas las direcciones de los
+                                    dispositivos,
+                                    llamada
+                                    tabla
+                                    de enrutamiento. Con ella, el enrutador envía una transmisión desde la
+                                    fuente hacia
+                                    el
+                                    destino a través de la mejor ruta. Los enrutadores funcionan en el nivel de
+                                    red del
+                                    modelo
+                                    OSI.
+                                </p>
+                            </div>
+                            <div class="columna2DerR">
+                                <figure>
+                                    <img src="Imagenes/Router.jpg" height="230px" weight="240px" alt="Repetidor">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="gateway">
+                            <div class="tituloGateway">
+                                <b>
+                                    <h3>GATEWAY</h3>
+                                </b>
+                            </div>
+                            <div class="columna1DerG">
+                                <p>
+                                    Las puertas de enlace son dispositivos de conexión multipropósito para crear
+                                    uniones
+                                    entre
+                                    redes diferentes. Son capaces de convertir el formato de los paquetes de un
+                                    entorno,
+                                    a
+                                    otro
+                                    formato. Funcionan como agentes de mensajería que toman datos de un sistema,
+                                    los
+                                    interpretan
+                                    y transfieren a otro sistema.
+                                </p>
+                            </div>
+                            <div class="columna2IzqG">
+                                <figure>
+                                    <img src="Imagenes/Gateways.jpg" height="230px" weight="240px" alt="Repetidor">
+                                </figure>
+                            </div>
+                        </div>
+                    </span>
+                    <button class="readMore_btn5" id="hideText_btn5"> Leer más </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="ServiciosConvergentes">
+            <div class="contenedorServiciosConvergentes">
+                <div class="SC">
+                    <div class="tituloSC">
+                        <h3>7. SERVICIOS CONVERGENTES</h3>
+                    </div>
+                    <div class="defSC">
+                        <p>
+                            •	Los Servicios Convergentes son una combinación de servicios de comunicaciones fijas y
+                            móviles de voz y datos.
+                        </p>
+                    </div>
+                    <div class="ImgServiciosConvergentes">
+                        <figure>
+                            <img src="Imagenes/ServiciosConvergentes.png" height="230px" weight="240px" alt="Repetidor">
+                        </figure>
+                    </div>
+
+                    <span class="hide6" id="hideText6">
+                        <div class="VOIP">
+                            <div class="tituloVOIP">
+                                <h3>7.1 VOIP</h3>
+                            </div>
+                            <div class="definicionVOIP">
+                                <p>
+                                    El término VoIP significa Voz sobre Protocolo de Internet, y se trata de un método
+                                    con el que puedes hacer llamadas de voz a través de la red. Para eso, se toman el
+                                    audio de lo que estás diciendo por el micrófono y se convierte en datos digitales,
+                                    que se transmiten por la red a otro dispositivo donde se interpretan para que se
+                                    escuche de nuevo la voz.<br><br>
+                                    El término de VoIP realmente se refiere a los protocolos que facilitan estas
+                                    llamadas, aunque popularmente usamos el nombre para referirnos a las llamadas en sí.
+                                    Estas pueden realizarse a través de cualquier tipo de conexión, desde las redes LAN
+                                    domésticas hasta las redes de datos móviles. Vamos, que puedes llamar tanto desde el
+                                    ordenador como desde el móvil o una tableta, siempre y cuando tengas una app que lo
+                                    permita.<br>
+                                    Esta tecnología de llamadas por Internet es muy común sobre todo en aplicaciones
+                                    móviles, pero también puede utilizarse en los teléfonos fijos.<br><br>
+                                    Por ejemplo, tienes los routers de VoIP, en los que conectas un teléfono fijo
+                                    convencional y puedes realizar llamadas por Internet. También están los ATA VoIP u
+                                    adaptadores de teléfono analógico, que son aparatos que se conectan al router, y al
+                                    que podemos conectar después varios teléfonos convencionales. Es un pequeño aparato
+                                    que se conecta al router y a este, a su vez, conectamos varios teléfonos
+                                    convencionales para que canalice las llamadas a través de la red.<br>
+                                    Luego tienes los teléfonos de VoIP, que son muy parecidos a los fijos de casa pero
+                                    que puedes conectar directamente a tu router, o la opción de contratar una tarifa
+                                    VoIP con tu operador para que te facilite este proceso.<br>
+                                </p>
+                            </div>
+                            <div class="ImgSC">
+                                <figure>
+                                    <img src="Imagenes/VOIP.jpg" height="230px" weight="240px" alt="Repetidor">
+                                </figure>
+                            </div>
+                        </div>
+
+                        <div class="CCTV">
+                            <div class="tituloCCTV">
+                                <h3>7.2 CCTV</h3>
+                            </div>
+                            <div class="definicionCCTV">
+                                <p>
+                                    Un CCTV o circuito cerrado de televisión es una instalación de equipos conectados
+                                    que generan un circuito de imágenes que solo puede ser visto por un grupo
+                                    determinado de personas, estas se personalizan para adaptarse a las necesidades de
+                                    cada cliente bien sean orientadas a la seguridad, vigilancia o mejora de servicio.
+                                    También tiene otras aplicaciones que no están necesariamente orientadas a la
+                                    seguridad, se puede usar para el control o supervisión de procesos industriales o
+                                    logísticos, control del tráfico, en el sector salud y retail, así como en
+                                    aplicaciones académicas en diferentes ámbitos.
+                                    Debido al desarrollo de nuevas tecnologías existen muchos tipos de CCTV, analógicas,
+                                    digitales, con o sin cables que varían en su forma de operación, los equipos
+                                    básicamente son los mismos, se requieren cámaras, lentes, cables y un monitor para
+                                    visualizar las imágenes.
+                                    Las cámaras reciben las imágenes que son enviadas a los monitores por cable o vía
+                                    inalámbrica donde son observados por personal calificado o vistos a distancia en
+                                    tiempo real, a su vez son grabados en dispositivos o equipos dedicados para ello.
+                                </p>
+                            </div>
+                            <div class="Tipos">
+                                <h3>TIPOS</h3>
+                            </div>
+                            <div class="textoTipos">
+                                <p>
+                                    - Existen dos tipos de CCTV según la tecnología con la que se implemente el sistema:
+                                    análoga y digital, este último llamado de forma común CCTV IP, por usar el protocolo
+                                    TCP/IP para la transmisión de información de la señal de video.
+                                </p>
+                            </div>
+
+                            <div class="ImgCCTV">
+                                <figure>
+                                    <img src="Imagenes/CCTV.jpg" height="230px" weight="240px"
+                                        alt="Repetidor">
+                                </figure>
+                            </div>
+                        </div>
+
+                    </span>
+                    <button class="readMore_btn6" id="hideText_btn6"> Leer más </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="Beneficios">
+            <div class="contenedorBeneficios">
+                <div class="B">
+                    <div class="tituloB">
+                        <h3>8. BENEFICIOS</h3>
+                    </div>
+                    <div class="definicionB">
+                        <p>
+                            El objetivo del cableado estructurado es mejorar y optimizar los procesos tanto internos
+                            como externos de una empresa, además de reducir los costos y contribuir a la rapidez de las
+                            comunicaciones. Algunos de sus beneficios son:
+                        </p>
+                    </div>
+
+                    <span class="hide7" id="hideText7">
+                        <div class="listBeneficios">
+
+                            <div class="AdministracionEYS">
+                                <div class="tituloAEYS">
+                                    <h3>8.1 ADMINISTRACIÓN EFICAZ Y SENCILLA</h3>
+                                </div>
+                                <div class="DefinicionAEYS">
+                                    <P>
+                                        Esta opción ofrece la facilidad de que los recursos se puedan mover de puesto en
+                                        el lugar de trabajo y poder acceder a los mismos servicios o incluir servicios a
+                                        la red sin la necesidad de volver a hacer la instalación del cableado,
+                                        aminorando costos y tiempo.
+                                    </P>
+                                </div>
+                            </div>
+
+                            <div class="Integracion">
+                                <div class="tituloIn">
+                                    <h3>8.2 INTEGRACIÓN</h3>
+                                </div>
+                                <div class="DefinicionIn">
+                                    <P>
+                                        Con este mecanismo, se pueden integrar varios servidores en la red, como, por
+                                        ejemplo, datos, voz, imagen, sistemas de seguridad, alarmas, entre otras, con un
+                                        mismo sistema. Al integrar estas aplicaciones, se suele emplear un canal de
+                                        distribución para transportar todos los cables encargados de llevar la señal a
+                                        cada salida de información.
+                                    </P>
+                                </div>
+                            </div>
+
+                            <div class="FacilEntendimiento">
+                                <div class="tituloFE">
+                                    <h3>8.3. FÁCIL MANTENIMIENTO</h3>
+                                </div>
+                                <div class="DefinicionFE">
+                                    <P>
+                                        Este sistema de cableado estructurado es de fácil mantenimiento, ya que se le
+                                        hace seguimiento a una sola estructura de cableado y no a múltiples, por lo que
+                                        se reducen los costos considerablemente.
+                                    </P>
+                                </div>
+                            </div>
+
+                            <div class="AltoRendimiento">
+                                <div class="tituloAR">
+                                    <h3>8.4. ALTO RENDIMIENTO</h3>
+                                </div>
+                                <div class="DefinicionAR">
+                                    <P>
+                                        Si usted cuenta con cableado estructurado, tendrá una mayor velocidad de
+                                        conexión de datos entre los equipos de la empresa porque se transmiten a través
+                                        de fibra óptica.
+                                    </P>
+                                </div>
+                            </div>
+
+                            <div class="MayorSeguridad">
+                                <div class="tituloMS">
+                                    <h3>8.5. MAYOR SEGURIDAD</h3>
+                                </div>
+                                <div class="DefinicionMS">
+                                    <P>
+                                        El establecimiento que cuente con red de cableado, podrá tener mayor seguridad
+                                        tanto en el ámbito de información, así como en el de seguridad, orientado al
+                                        personal que hace vida en las instalaciones. Del mismo modo, es seguro porque
+                                        debido a su instalación, el personal que no se encuentre autorizado no puede
+                                        modificar su sistema.
+                                    </P>
+                                </div>
+                            </div>
+
+
+                            <div class="VISUAL">
+                                <div class="tituloVis">
+                                    <h3>8.6. VISUAL</h3>
+                                </div>
+                                <div class="DefinicionVis">
+                                    <P>
+                                        Al integrar todo en un mismo cableado, se reducen los espacios, logrando que
+                                        todo se vea más ordenado y cuidado. Se pueden crear espacios estéticamente
+                                        agradables que contribuyan con la imagen de la organización.
+                                    </P>
+                                </div>
+                            </div>
+
+
+                            <div class="AltaDurabilidad">
+                                <div class="tituloAD">
+                                    <h3>8.7. ALTA DURABILIDAD</h3>
+                                </div>
+                                <div class="DefinicionAD">
+                                    <P>
+                                        Este sistema ofrece un amplio período de vida útil, oscilando entre los 10 y 15
+                                        años de funcionamiento, garantizando que se van a admitir todas las tecnologías
+                                        o telecomunicaciones, tanto actuales como futuras dentro de ese lapso. Del mismo
+                                        modo, al momento de actualizar el sistema, los costos se reducen por la
+                                        estructura que ya quedará en el tiempo.
+                                    </P>
+                                </div>
+                            </div>
+
+                            <div class="Ampliacion">
+                                <div class="tituloAmp">
+                                    <h3>8.8. AMPLIACIÓN</h3>
+                                </div>
+                                <div class="DefinicionAmp">
+                                    <P>
+                                        Gracias a su estructura y versatilidad, este sistema se puede ampliar de tamaño
+                                        si es necesario o incluso, se puede mover si la organización cambia de sede
+                                        física, brindando siempre protección y seguridad en los datos e información que
+                                        yace ahí.
+                                    </P>
+                                </div>
+                            </div>
+
+                            <div class="Amoldeabilidad">
+                                <div class="tituloAmol">
+                                    <h3>8.9. AMOLDEABILIDAD</h3>
+                                </div>
+                                <div class="DefinicionAmol">
+                                    <P>
+                                        Se puede manejar una independencia de protocolo y proveedor, además de contar
+                                        con una instalación flexible y una sencilla gestión según las necesidades que se
+                                        requieran.
+                                    </P>
+                                </div>
+                            </div>
+
+                            <div class="ReduccionDeCostos">
+                                <div class="tituloRDC">
+                                    <h3>8.10. REDUCCIÓN DE COSTOS</h3>
+                                </div>
+                                <div class="DefinicionRDC">
+                                    <P>
+                                        Como ya lo hemos mencionado antes, contar con un sistema de cableado
+                                        estructurado se reducen costos por mantenimiento, traslado, ampliación, además
+                                        de contar con una durabilidad de 10 años o más.
+                                    </P>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                    <button class="readMore_btn7" id="hideText_btn7"> Leer más </button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="acercaDeNosotros">
+        <section class="acercaDeNosotrosTitulo">
+            <b>
+                <h1 class="title">ACERCA DE NOSOTROS</h1>
+            </b>
+            <br>
+        </section>
+        <div class="box-container">
+
+            <div class="box">
+                <div class="tituloJoss">
+                    <b>
+                        <h3>ALEXA...</h3>
+                    </b>
+                </div>
+                <div class="ImgJoss">
+                    <figure class="JosselinNoguera">
+                        <img src="Imagenes/Alexa.jpg" height="180px" weight="100%" alt="Josselin Noguera">
+                    </figure>
+                </div>
+                <div class="TextoJoss">
+                    <p>
+                        Josselyn Dayana Noguera Salazar nació en la ciudad de Quito-Ecuador en el año 2002. Desde
+                        temprana edad mostró interés por el baile, por lo cual se podría decir que es su hobby, y ha
+                        ganado algunos premios de baile. Le gusta mucho el básquet al igual que la natación, las
+                        películas que le gustan son de terror y su favorita es Evil Dead.
+                    </p>
+                </div>
+            </div>
+
+            <div class="box1">
+
+                <div class="tituloJimmy">
+                    <b>
+                        <h3>KENNY MAURICIO PINCHAO JARAMILLO</h3>
+                    </b>
+                </div>
+                <div class="ImgJimmy">
+                    <figure class="JimmyArias">
+                        <img src="Imagenes/149071.png" height="180px" weight="100%" alt="Jimmy Arias">
+                    </figure>
+                </div>
+                <div class="TextoJim">
+                    <p>
+                        Kenny nacio el 2002
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="box3">
+                <div class="tituloJohan">
+                    <b>
+                        <h3>JOHAN ROBERTO MANTILLA PANCHO</h3>
+                    </b>
+                </div>
+                <div class="ImgJohan">
+                    <figure class="JohanMantilla">
+                        <img src="Imagenes/JohanMantilla.jpeg" height="180px" weight="100%" alt="Johan Mantilla">
+                    </figure>
+                </div>
+                <div class="TextoJohan">
+                    <p>
+                        Johan Roberto Mantilla Pancho el nació el 18 de noviembre del año 2001 en la ciudad de Quito. Ha
+                        leído "Sangre de Campeones de
+                        Carlos
+                        Cuauhtémoc Sánchez", "La Guerra de los Mundos de
+                        HG. WELLS", etc.
+                        Él tiene habilidades para la programación, es muy creativo, le gusta escuchar y socializar.
+                        Práctica fútbol y
+                        un poco de tenis. Entre sus hobbies está escuchar música a toda hora, ver series como "The
+                        walking Dead" y en especial le encanta jugar Video Juegos. Su película favorita es "Warcraft"
+                        otros
+                        datos es que
+                        tiene conocimientos de programación en c, c++, c Sharp, visual basic, MySQL, java, SQL Server,
+                        HTML,
+                        etc. Actualmente Estudia Ingeniería de Software en la Escuela Politécnica Nacional
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="caja">
+                <figure>
+                    <a href="#">
+                        <img src="Imagenes/lenguajes-de-programacion-featured.png" alt="Logo de SLEE DW">
+                    </a>
+                </figure>
+            </div>
+            <div class="caja">
+                <h2>CONTACTOS</h2>
+                <p>mercedes.martinez@epn.edu.ec</p>
+                <p>kenny.pinchao@epn.edu.ec</p>
+                <p>johan.mantilla01@epn.edu.ec</p>
+            </div>
+            <div class="caja">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo2">
+            <small>&copy; 2023 <b>Grupo Compilers</b> - Todos los derechos reservados</small>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
